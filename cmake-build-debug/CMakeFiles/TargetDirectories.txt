@@ -1,0 +1,3 @@
+C:/Users/ACER/Desktop/EndGame/cmake-build-debug/CMakeFiles/EndGame.dir
+C:/Users/ACER/Desktop/EndGame/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/ACER/Desktop/EndGame/cmake-build-debug/CMakeFiles/rebuild_cache.dir
