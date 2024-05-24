@@ -268,7 +268,7 @@ int main(int argc, char *argv[])
         OUTPUT.close();
         start = 1;
     }
-    start = 769; end = 10000;
+    start = 4515; end = 4515;
     for (int i = start; i <= end; i++)
     {
         cout << i << " ";

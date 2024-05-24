@@ -26,7 +26,7 @@ ROUND : 0 - TURN : 2
 ArrayMovingObject[count=3;capacity=10;]
 	Criminal[index=0;pos=(1,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(1,5);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
@@ -37,7 +37,7 @@ ROUND : 1 - TURN : 0
 ArrayMovingObject[count=3;capacity=10;]
 	Criminal[index=0;pos=(0,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(1,5);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
@@ -48,7 +48,7 @@ ROUND : 1 - TURN : 1
 ArrayMovingObject[count=3;capacity=10;]
 	Criminal[index=0;pos=(0,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(1,5);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
@@ -94,7 +94,7 @@ ROUND : 2 - TURN : 2
 ArrayMovingObject[count=4;capacity=10;]
 	Criminal[index=0;pos=(1,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(0,4);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
@@ -106,7 +106,7 @@ ROUND : 2 - TURN : 3
 ArrayMovingObject[count=4;capacity=10;]
 	Criminal[index=0;pos=(1,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(0,4);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
@@ -118,7 +118,7 @@ ROUND : 3 - TURN : 0
 ArrayMovingObject[count=4;capacity=10;]
 	Criminal[index=0;pos=(0,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(0,4);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
@@ -130,7 +130,7 @@ ROUND : 3 - TURN : 1
 ArrayMovingObject[count=4;capacity=10;]
 	Criminal[index=0;pos=(0,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(0,4);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
@@ -190,7 +190,7 @@ ROUND : 4 - TURN : 2
 ArrayMovingObject[count=4;capacity=10;]
 	Criminal[index=0;pos=(1,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(1,5);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(1,6);type=C;dist=]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
@@ -202,7 +202,7 @@ ROUND : 4 - TURN : 3
 ArrayMovingObject[count=4;capacity=10;]
 	Criminal[index=0;pos=(1,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(1,5);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
@@ -214,9 +214,9 @@ ROUND : 5 - TURN : 0
 ArrayMovingObject[count=5;capacity=10;]
 	Criminal[index=0;pos=(0,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(1,5);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(1,6);type=W;dist=1]
+	Robot[pos=(1,6);type=W;dist=2]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
@@ -227,9 +227,9 @@ ROUND : 5 - TURN : 1
 ArrayMovingObject[count=5;capacity=10;]
 	Criminal[index=0;pos=(0,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(1,5);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(1,6);type=W;dist=1]
+	Robot[pos=(1,6);type=W;dist=2]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
@@ -305,9 +305,9 @@ ROUND : 6 - TURN : 2
 ArrayMovingObject[count=5;capacity=10;]
 	Criminal[index=0;pos=(1,6)]
 	Sherlock[index=1;pos=(1,1);moving_rule=RUURRDL]
-	Watson[index=2;pos=(0,4);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(1,6);type=C;dist=]
-	Robot[pos=(0,6);type=W;dist=2]
+	Robot[pos=(0,6);type=W;dist=1]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
@@ -318,9 +318,9 @@ ROUND : 6 - TURN : 3
 ArrayMovingObject[count=5;capacity=10;]
 	Criminal[index=0;pos=(1,6)]
 	Sherlock[index=1;pos=(1,1);moving_rule=RUURRDL]
-	Watson[index=2;pos=(0,4);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(0,6);type=W;dist=2]
+	Robot[pos=(0,6);type=W;dist=1]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
@@ -331,39 +331,39 @@ ROUND : 6 - TURN : 4
 ArrayMovingObject[count=5;capacity=10;]
 	Criminal[index=0;pos=(1,6)]
 	Sherlock[index=1;pos=(1,1);moving_rule=RUURRDL]
-	Watson[index=2;pos=(0,4);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(0,5);type=W;dist=1]
+	Robot[pos=(0,5);type=W;dist=0]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 7 - TURN : 0
 ArrayMovingObject[count=5;capacity=10;]
 	Criminal[index=0;pos=(0,6)]
 	Sherlock[index=1;pos=(1,1);moving_rule=RUURRDL]
-	Watson[index=2;pos=(0,4);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(0,5);type=W;dist=1]
+	Robot[pos=(0,5);type=W;dist=0]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 7 - TURN : 1
 ArrayMovingObject[count=5;capacity=10;]
 	Criminal[index=0;pos=(0,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(0,4);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(0,5);type=W;dist=1]
+	Robot[pos=(0,5);type=W;dist=0]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 7 - TURN : 2
@@ -376,7 +376,7 @@ ArrayMovingObject[count=5;capacity=10;]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=1;ExcemptionCard]
+WatsonBag : Bag[count=2;ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 7 - TURN : 3
@@ -389,7 +389,7 @@ ArrayMovingObject[count=5;capacity=10;]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=1;ExcemptionCard]
+WatsonBag : Bag[count=2;ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 7 - TURN : 4
@@ -402,7 +402,7 @@ ArrayMovingObject[count=5;capacity=10;]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=1;ExcemptionCard]
+WatsonBag : Bag[count=2;ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 8 - TURN : 0
@@ -416,7 +416,7 @@ ArrayMovingObject[count=6;capacity=10;]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=1;ExcemptionCard]
+WatsonBag : Bag[count=2;ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 8 - TURN : 1
@@ -430,91 +430,91 @@ ArrayMovingObject[count=6;capacity=10;]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=1;ExcemptionCard]
+WatsonBag : Bag[count=2;ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 8 - TURN : 2
 ArrayMovingObject[count=6;capacity=10;]
 	Criminal[index=0;pos=(1,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(1,5);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(1,6);type=C;dist=]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=1;ExcemptionCard]
+WatsonBag : Bag[count=2;ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 8 - TURN : 3
 ArrayMovingObject[count=6;capacity=10;]
 	Criminal[index=0;pos=(1,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(1,5);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=1;ExcemptionCard]
+WatsonBag : Bag[count=2;ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 8 - TURN : 4
 ArrayMovingObject[count=6;capacity=10;]
 	Criminal[index=0;pos=(1,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(1,5);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(0,6);type=W;dist=2]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,6);type=W;dist=1]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=1;ExcemptionCard]
+WatsonBag : Bag[count=3;ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 8 - TURN : 5
 ArrayMovingObject[count=6;capacity=10;]
 	Criminal[index=0;pos=(1,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(1,5);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=1;ExcemptionCard]
+WatsonBag : Bag[count=3;ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 9 - TURN : 0
 ArrayMovingObject[count=6;capacity=10;]
 	Criminal[index=0;pos=(0,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(1,5);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=1;ExcemptionCard]
+WatsonBag : Bag[count=3;ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 9 - TURN : 1
 ArrayMovingObject[count=6;capacity=10;]
 	Criminal[index=0;pos=(0,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(1,5);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=1;ExcemptionCard]
+WatsonBag : Bag[count=3;ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 9 - TURN : 2
@@ -523,12 +523,12 @@ ArrayMovingObject[count=6;capacity=10;]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
 	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(1,6);type=W;dist=2]
-	Robot[pos=(1,6);type=W;dist=2]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=1;ExcemptionCard]
+WatsonBag : Bag[count=4;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 9 - TURN : 3
@@ -537,12 +537,12 @@ ArrayMovingObject[count=6;capacity=10;]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
 	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(1,6);type=C;dist=]
-	Robot[pos=(1,6);type=W;dist=2]
-	Robot[pos=(1,6);type=W;dist=2]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=1;ExcemptionCard]
+WatsonBag : Bag[count=4;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 9 - TURN : 4
@@ -552,11 +552,11 @@ ArrayMovingObject[count=6;capacity=10;]
 	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(1,6);type=C;dist=]
 	Robot[pos=(0,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=2]
+	Robot[pos=(0,5);type=W;dist=0]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=1;ExcemptionCard]
+WatsonBag : Bag[count=4;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 9 - TURN : 5
@@ -570,7 +570,7 @@ ArrayMovingObject[count=6;capacity=10;]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=1;ExcemptionCard]
+WatsonBag : Bag[count=4;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 10 - TURN : 0
@@ -584,7 +584,7 @@ ArrayMovingObject[count=6;capacity=10;]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=1;ExcemptionCard]
+WatsonBag : Bag[count=4;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 10 - TURN : 1
@@ -598,93 +598,93 @@ ArrayMovingObject[count=6;capacity=10;]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=1;ExcemptionCard]
+WatsonBag : Bag[count=4;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 10 - TURN : 2
 ArrayMovingObject[count=6;capacity=10;]
 	Criminal[index=0;pos=(1,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(0,4);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(1,6);type=C;dist=]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=1;ExcemptionCard]
+WatsonBag : Bag[count=4;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 10 - TURN : 3
 ArrayMovingObject[count=6;capacity=10;]
 	Criminal[index=0;pos=(1,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(0,4);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=1;ExcemptionCard]
+WatsonBag : Bag[count=4;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 10 - TURN : 4
 ArrayMovingObject[count=6;capacity=10;]
 	Criminal[index=0;pos=(1,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(0,4);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,6);type=W;dist=2]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,6);type=W;dist=1]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=1;ExcemptionCard]
+WatsonBag : Bag[count=5;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 10 - TURN : 5
 ArrayMovingObject[count=6;capacity=10;]
 	Criminal[index=0;pos=(1,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(0,4);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,5);type=W;dist=1]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=1;ExcemptionCard]
+WatsonBag : Bag[count=5;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 11 - TURN : 0
 ArrayMovingObject[count=7;capacity=10;]
 	Criminal[index=0;pos=(0,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(0,4);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=3]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(1,6);type=W;dist=2]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=1;ExcemptionCard]
+WatsonBag : Bag[count=5;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 11 - TURN : 1
 ArrayMovingObject[count=7;capacity=10;]
 	Criminal[index=0;pos=(0,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(0,4);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=3]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(1,6);type=W;dist=2]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=1;ExcemptionCard]
+WatsonBag : Bag[count=5;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 11 - TURN : 2
@@ -699,7 +699,7 @@ ArrayMovingObject[count=7;capacity=10;]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=2;ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=6;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 11 - TURN : 3
@@ -714,7 +714,7 @@ ArrayMovingObject[count=7;capacity=10;]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=2;ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=6;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 11 - TURN : 4
@@ -729,7 +729,7 @@ ArrayMovingObject[count=7;capacity=10;]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=2;ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=6;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 11 - TURN : 5
@@ -744,7 +744,7 @@ ArrayMovingObject[count=7;capacity=10;]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=2;ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=6;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 11 - TURN : 6
@@ -759,7 +759,7 @@ ArrayMovingObject[count=7;capacity=10;]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=2;ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=6;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 12 - TURN : 0
@@ -774,7 +774,7 @@ ArrayMovingObject[count=7;capacity=10;]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=2;ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=6;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 12 - TURN : 1
@@ -789,112 +789,112 @@ ArrayMovingObject[count=7;capacity=10;]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=2;ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=6;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 12 - TURN : 2
 ArrayMovingObject[count=7;capacity=10;]
 	Criminal[index=0;pos=(1,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(1,5);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(1,6);type=C;dist=]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=2;ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=6;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 12 - TURN : 3
 ArrayMovingObject[count=7;capacity=10;]
 	Criminal[index=0;pos=(1,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(1,5);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=2;ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=6;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 12 - TURN : 4
 ArrayMovingObject[count=7;capacity=10;]
 	Criminal[index=0;pos=(1,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(1,5);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=2;ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=7;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 12 - TURN : 5
 ArrayMovingObject[count=7;capacity=10;]
 	Criminal[index=0;pos=(1,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(1,5);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(0,6);type=W;dist=2]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,6);type=W;dist=1]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=2;ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=7;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 12 - TURN : 6
 ArrayMovingObject[count=7;capacity=10;]
 	Criminal[index=0;pos=(1,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(1,5);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=2;ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=8;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 13 - TURN : 0
 ArrayMovingObject[count=7;capacity=10;]
 	Criminal[index=0;pos=(0,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(1,5);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=2;ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=8;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 13 - TURN : 1
 ArrayMovingObject[count=7;capacity=10;]
 	Criminal[index=0;pos=(0,6)]
 	Sherlock[index=1;pos=(1,1);moving_rule=RUURRDL]
-	Watson[index=2;pos=(1,5);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=2;ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=8;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 13 - TURN : 2
@@ -903,13 +903,13 @@ ArrayMovingObject[count=7;capacity=10;]
 	Sherlock[index=1;pos=(1,1);moving_rule=RUURRDL]
 	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(1,6);type=W;dist=2]
-	Robot[pos=(1,6);type=W;dist=2]
-	Robot[pos=(1,6);type=W;dist=2]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=2;ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=10;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 13 - TURN : 3
@@ -918,13 +918,13 @@ ArrayMovingObject[count=7;capacity=10;]
 	Sherlock[index=1;pos=(1,1);moving_rule=RUURRDL]
 	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(1,6);type=C;dist=]
-	Robot[pos=(1,6);type=W;dist=2]
-	Robot[pos=(1,6);type=W;dist=2]
-	Robot[pos=(1,6);type=W;dist=2]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=2;ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=10;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 13 - TURN : 4
@@ -934,12 +934,12 @@ ArrayMovingObject[count=7;capacity=10;]
 	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(1,6);type=C;dist=]
 	Robot[pos=(0,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=2]
-	Robot[pos=(1,6);type=W;dist=2]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=2;ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=10;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 13 - TURN : 5
@@ -950,11 +950,11 @@ ArrayMovingObject[count=7;capacity=10;]
 	Robot[pos=(1,6);type=C;dist=]
 	Robot[pos=(0,6);type=W;dist=1]
 	Robot[pos=(0,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=2]
+	Robot[pos=(0,5);type=W;dist=0]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=2;ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=10;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 13 - TURN : 6
@@ -969,7 +969,7 @@ ArrayMovingObject[count=7;capacity=10;]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=2;ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=10;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 14 - TURN : 0
@@ -985,7 +985,7 @@ ArrayMovingObject[count=8;capacity=10;]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=2;ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=10;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 14 - TURN : 1
@@ -1001,135 +1001,135 @@ ArrayMovingObject[count=8;capacity=10;]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=2;ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=10;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 14 - TURN : 2
 ArrayMovingObject[count=8;capacity=10;]
 	Criminal[index=0;pos=(1,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(0,4);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(1,6);type=C;dist=]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=2;ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=10;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 14 - TURN : 3
 ArrayMovingObject[count=8;capacity=10;]
 	Criminal[index=0;pos=(1,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(0,4);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=2;ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=10;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 14 - TURN : 4
 ArrayMovingObject[count=8;capacity=10;]
 	Criminal[index=0;pos=(1,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(0,4);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=2;ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=11;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 14 - TURN : 5
 ArrayMovingObject[count=8;capacity=10;]
 	Criminal[index=0;pos=(1,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(0,4);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=2;ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=11;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 14 - TURN : 6
 ArrayMovingObject[count=8;capacity=10;]
 	Criminal[index=0;pos=(1,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(0,4);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,6);type=W;dist=2]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,6);type=W;dist=1]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=2;ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=12;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 14 - TURN : 7
 ArrayMovingObject[count=8;capacity=10;]
 	Criminal[index=0;pos=(1,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(0,4);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,5);type=W;dist=1]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=2;ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=12;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 15 - TURN : 0
 ArrayMovingObject[count=8;capacity=10;]
 	Criminal[index=0;pos=(0,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(0,4);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,5);type=W;dist=1]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=2;ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=12;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 15 - TURN : 1
 ArrayMovingObject[count=8;capacity=10;]
 	Criminal[index=0;pos=(0,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(0,4);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,5);type=W;dist=1]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=2;ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=12;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 15 - TURN : 2
@@ -1145,7 +1145,7 @@ ArrayMovingObject[count=8;capacity=10;]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=4;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=14;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 15 - TURN : 3
@@ -1161,7 +1161,7 @@ ArrayMovingObject[count=8;capacity=10;]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=4;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=14;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 15 - TURN : 4
@@ -1177,7 +1177,7 @@ ArrayMovingObject[count=8;capacity=10;]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=4;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=14;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 15 - TURN : 5
@@ -1193,7 +1193,7 @@ ArrayMovingObject[count=8;capacity=10;]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=4;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=14;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 15 - TURN : 6
@@ -1209,7 +1209,7 @@ ArrayMovingObject[count=8;capacity=10;]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=4;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=14;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 15 - TURN : 7
@@ -1225,7 +1225,7 @@ ArrayMovingObject[count=8;capacity=10;]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=4;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=14;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 16 - TURN : 0
@@ -1241,7 +1241,7 @@ ArrayMovingObject[count=8;capacity=10;]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=4;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=14;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 16 - TURN : 1
@@ -1257,137 +1257,137 @@ ArrayMovingObject[count=8;capacity=10;]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=4;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=14;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 16 - TURN : 2
 ArrayMovingObject[count=8;capacity=10;]
 	Criminal[index=0;pos=(1,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(1,5);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(1,6);type=C;dist=]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=4;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=14;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 16 - TURN : 3
 ArrayMovingObject[count=8;capacity=10;]
 	Criminal[index=0;pos=(1,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(1,5);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=4;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=14;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 16 - TURN : 4
 ArrayMovingObject[count=8;capacity=10;]
 	Criminal[index=0;pos=(1,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(1,5);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=4;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 16 - TURN : 5
 ArrayMovingObject[count=8;capacity=10;]
 	Criminal[index=0;pos=(1,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(1,5);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=4;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 16 - TURN : 6
 ArrayMovingObject[count=8;capacity=10;]
 	Criminal[index=0;pos=(1,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(1,5);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(0,6);type=W;dist=2]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,6);type=W;dist=1]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=4;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 16 - TURN : 7
 ArrayMovingObject[count=8;capacity=10;]
 	Criminal[index=0;pos=(1,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(1,5);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=4;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 17 - TURN : 0
 ArrayMovingObject[count=9;capacity=10;]
 	Criminal[index=0;pos=(0,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(1,5);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(1,6);type=W;dist=2]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=4;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 17 - TURN : 1
 ArrayMovingObject[count=9;capacity=10;]
 	Criminal[index=0;pos=(0,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(1,5);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(1,6);type=W;dist=2]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=4;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 17 - TURN : 2
@@ -1396,15 +1396,15 @@ ArrayMovingObject[count=9;capacity=10;]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
 	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(1,6);type=W;dist=2]
-	Robot[pos=(1,6);type=W;dist=2]
-	Robot[pos=(1,6);type=W;dist=2]
-	Robot[pos=(1,6);type=W;dist=2]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
 	Robot[pos=(1,6);type=W;dist=2]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=4;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 17 - TURN : 3
@@ -1413,15 +1413,15 @@ ArrayMovingObject[count=9;capacity=10;]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
 	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(1,6);type=C;dist=]
-	Robot[pos=(1,6);type=W;dist=2]
-	Robot[pos=(1,6);type=W;dist=2]
-	Robot[pos=(1,6);type=W;dist=2]
-	Robot[pos=(1,6);type=W;dist=2]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
 	Robot[pos=(1,6);type=W;dist=2]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=4;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 17 - TURN : 4
@@ -1431,14 +1431,14 @@ ArrayMovingObject[count=9;capacity=10;]
 	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(1,6);type=C;dist=]
 	Robot[pos=(0,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=2]
-	Robot[pos=(1,6);type=W;dist=2]
-	Robot[pos=(1,6);type=W;dist=2]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
 	Robot[pos=(1,6);type=W;dist=2]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=4;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 17 - TURN : 5
@@ -1449,13 +1449,13 @@ ArrayMovingObject[count=9;capacity=10;]
 	Robot[pos=(1,6);type=C;dist=]
 	Robot[pos=(0,6);type=W;dist=1]
 	Robot[pos=(0,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=2]
-	Robot[pos=(1,6);type=W;dist=2]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
 	Robot[pos=(1,6);type=W;dist=2]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=4;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 17 - TURN : 6
@@ -1467,12 +1467,12 @@ ArrayMovingObject[count=9;capacity=10;]
 	Robot[pos=(0,6);type=W;dist=1]
 	Robot[pos=(0,6);type=W;dist=1]
 	Robot[pos=(0,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=2]
+	Robot[pos=(0,5);type=W;dist=0]
 	Robot[pos=(1,6);type=W;dist=2]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=4;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 17 - TURN : 7
@@ -1489,7 +1489,7 @@ ArrayMovingObject[count=9;capacity=10;]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=4;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 17 - TURN : 8
@@ -1506,7 +1506,7 @@ ArrayMovingObject[count=9;capacity=10;]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=4;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 18 - TURN : 0
@@ -1523,7 +1523,7 @@ ArrayMovingObject[count=9;capacity=10;]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=4;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 18 - TURN : 1
@@ -1540,160 +1540,160 @@ ArrayMovingObject[count=9;capacity=10;]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=4;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 18 - TURN : 2
 ArrayMovingObject[count=9;capacity=10;]
 	Criminal[index=0;pos=(1,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(0,4);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(1,6);type=C;dist=]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=4;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 18 - TURN : 3
 ArrayMovingObject[count=9;capacity=10;]
 	Criminal[index=0;pos=(1,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(0,4);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=4;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 18 - TURN : 4
 ArrayMovingObject[count=9;capacity=10;]
 	Criminal[index=0;pos=(1,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(0,4);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=4;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 18 - TURN : 5
 ArrayMovingObject[count=9;capacity=10;]
 	Criminal[index=0;pos=(1,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(0,4);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=4;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 18 - TURN : 6
 ArrayMovingObject[count=9;capacity=10;]
 	Criminal[index=0;pos=(1,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(0,4);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=4;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 18 - TURN : 7
 ArrayMovingObject[count=9;capacity=10;]
 	Criminal[index=0;pos=(1,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(0,4);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,6);type=W;dist=2]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,6);type=W;dist=1]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=4;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 18 - TURN : 8
 ArrayMovingObject[count=9;capacity=10;]
 	Criminal[index=0;pos=(1,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(0,4);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,5);type=W;dist=1]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=4;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 19 - TURN : 0
 ArrayMovingObject[count=9;capacity=10;]
 	Criminal[index=0;pos=(0,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(0,4);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,5);type=W;dist=1]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=4;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 19 - TURN : 1
 ArrayMovingObject[count=9;capacity=10;]
 	Criminal[index=0;pos=(0,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(0,4);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,5);type=W;dist=1]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=4;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 19 - TURN : 2
@@ -1710,7 +1710,7 @@ ArrayMovingObject[count=9;capacity=10;]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=7;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 19 - TURN : 3
@@ -1727,7 +1727,7 @@ ArrayMovingObject[count=9;capacity=10;]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=7;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 19 - TURN : 4
@@ -1744,7 +1744,7 @@ ArrayMovingObject[count=9;capacity=10;]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=7;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 19 - TURN : 5
@@ -1761,7 +1761,7 @@ ArrayMovingObject[count=9;capacity=10;]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=7;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 19 - TURN : 6
@@ -1778,7 +1778,7 @@ ArrayMovingObject[count=9;capacity=10;]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=7;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 19 - TURN : 7
@@ -1795,7 +1795,7 @@ ArrayMovingObject[count=9;capacity=10;]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=7;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 19 - TURN : 8
@@ -1812,7 +1812,7 @@ ArrayMovingObject[count=9;capacity=10;]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=7;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 20 - TURN : 0
@@ -1830,7 +1830,7 @@ ArrayMovingObject[count=10;capacity=10;]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=7;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 20 - TURN : 1
@@ -1848,187 +1848,187 @@ ArrayMovingObject[count=10;capacity=10;]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=7;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 20 - TURN : 2
 ArrayMovingObject[count=10;capacity=10;]
 	Criminal[index=0;pos=(1,6)]
 	Sherlock[index=1;pos=(1,1);moving_rule=RUURRDL]
-	Watson[index=2;pos=(1,5);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(1,6);type=C;dist=]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=7;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 20 - TURN : 3
 ArrayMovingObject[count=10;capacity=10;]
 	Criminal[index=0;pos=(1,6)]
 	Sherlock[index=1;pos=(1,1);moving_rule=RUURRDL]
-	Watson[index=2;pos=(1,5);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=7;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 20 - TURN : 4
 ArrayMovingObject[count=10;capacity=10;]
 	Criminal[index=0;pos=(1,6)]
 	Sherlock[index=1;pos=(1,1);moving_rule=RUURRDL]
-	Watson[index=2;pos=(1,5);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=7;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 20 - TURN : 5
 ArrayMovingObject[count=10;capacity=10;]
 	Criminal[index=0;pos=(1,6)]
 	Sherlock[index=1;pos=(1,1);moving_rule=RUURRDL]
-	Watson[index=2;pos=(1,5);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=7;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 20 - TURN : 6
 ArrayMovingObject[count=10;capacity=10;]
 	Criminal[index=0;pos=(1,6)]
 	Sherlock[index=1;pos=(1,1);moving_rule=RUURRDL]
-	Watson[index=2;pos=(1,5);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=7;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 20 - TURN : 7
 ArrayMovingObject[count=10;capacity=10;]
 	Criminal[index=0;pos=(1,6)]
 	Sherlock[index=1;pos=(1,1);moving_rule=RUURRDL]
-	Watson[index=2;pos=(1,5);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=7;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 20 - TURN : 8
 ArrayMovingObject[count=10;capacity=10;]
 	Criminal[index=0;pos=(1,6)]
 	Sherlock[index=1;pos=(1,1);moving_rule=RUURRDL]
-	Watson[index=2;pos=(1,5);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(0,6);type=W;dist=2]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,6);type=W;dist=1]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=7;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 20 - TURN : 9
 ArrayMovingObject[count=10;capacity=10;]
 	Criminal[index=0;pos=(1,6)]
 	Sherlock[index=1;pos=(1,1);moving_rule=RUURRDL]
-	Watson[index=2;pos=(1,5);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=7;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 21 - TURN : 0
 ArrayMovingObject[count=10;capacity=10;]
 	Criminal[index=0;pos=(0,6)]
 	Sherlock[index=1;pos=(1,1);moving_rule=RUURRDL]
-	Watson[index=2;pos=(1,5);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=7;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 21 - TURN : 1
 ArrayMovingObject[count=10;capacity=10;]
 	Criminal[index=0;pos=(0,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(1,5);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=7;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 21 - TURN : 2
@@ -2037,16 +2037,16 @@ ArrayMovingObject[count=10;capacity=10;]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
 	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(1,6);type=W;dist=2]
-	Robot[pos=(1,6);type=W;dist=2]
-	Robot[pos=(1,6);type=W;dist=2]
-	Robot[pos=(1,6);type=W;dist=2]
-	Robot[pos=(1,6);type=W;dist=2]
-	Robot[pos=(1,6);type=W;dist=2]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=7;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 21 - TURN : 3
@@ -2055,16 +2055,16 @@ ArrayMovingObject[count=10;capacity=10;]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
 	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(1,6);type=C;dist=]
-	Robot[pos=(1,6);type=W;dist=2]
-	Robot[pos=(1,6);type=W;dist=2]
-	Robot[pos=(1,6);type=W;dist=2]
-	Robot[pos=(1,6);type=W;dist=2]
-	Robot[pos=(1,6);type=W;dist=2]
-	Robot[pos=(1,6);type=W;dist=2]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=7;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 21 - TURN : 4
@@ -2074,15 +2074,15 @@ ArrayMovingObject[count=10;capacity=10;]
 	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(1,6);type=C;dist=]
 	Robot[pos=(0,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=2]
-	Robot[pos=(1,6);type=W;dist=2]
-	Robot[pos=(1,6);type=W;dist=2]
-	Robot[pos=(1,6);type=W;dist=2]
-	Robot[pos=(1,6);type=W;dist=2]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=7;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 21 - TURN : 5
@@ -2093,14 +2093,14 @@ ArrayMovingObject[count=10;capacity=10;]
 	Robot[pos=(1,6);type=C;dist=]
 	Robot[pos=(0,6);type=W;dist=1]
 	Robot[pos=(0,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=2]
-	Robot[pos=(1,6);type=W;dist=2]
-	Robot[pos=(1,6);type=W;dist=2]
-	Robot[pos=(1,6);type=W;dist=2]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=7;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 21 - TURN : 6
@@ -2112,13 +2112,13 @@ ArrayMovingObject[count=10;capacity=10;]
 	Robot[pos=(0,6);type=W;dist=1]
 	Robot[pos=(0,6);type=W;dist=1]
 	Robot[pos=(0,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=2]
-	Robot[pos=(1,6);type=W;dist=2]
-	Robot[pos=(1,6);type=W;dist=2]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=7;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 21 - TURN : 7
@@ -2131,12 +2131,12 @@ ArrayMovingObject[count=10;capacity=10;]
 	Robot[pos=(0,6);type=W;dist=1]
 	Robot[pos=(0,6);type=W;dist=1]
 	Robot[pos=(0,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=2]
-	Robot[pos=(1,6);type=W;dist=2]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=7;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 21 - TURN : 8
@@ -2150,11 +2150,11 @@ ArrayMovingObject[count=10;capacity=10;]
 	Robot[pos=(0,6);type=W;dist=1]
 	Robot[pos=(0,6);type=W;dist=1]
 	Robot[pos=(0,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=2]
+	Robot[pos=(0,5);type=W;dist=0]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=7;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 21 - TURN : 9
@@ -2172,7 +2172,7 @@ ArrayMovingObject[count=10;capacity=10;]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=7;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 22 - TURN : 0
@@ -2190,7 +2190,7 @@ ArrayMovingObject[count=10;capacity=10;]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=7;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 22 - TURN : 1
@@ -2208,187 +2208,187 @@ ArrayMovingObject[count=10;capacity=10;]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=7;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 22 - TURN : 2
 ArrayMovingObject[count=10;capacity=10;]
 	Criminal[index=0;pos=(1,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(0,4);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(1,6);type=C;dist=]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=7;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 22 - TURN : 3
 ArrayMovingObject[count=10;capacity=10;]
 	Criminal[index=0;pos=(1,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(0,4);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=7;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 22 - TURN : 4
 ArrayMovingObject[count=10;capacity=10;]
 	Criminal[index=0;pos=(1,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(0,4);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=7;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 22 - TURN : 5
 ArrayMovingObject[count=10;capacity=10;]
 	Criminal[index=0;pos=(1,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(0,4);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=7;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 22 - TURN : 6
 ArrayMovingObject[count=10;capacity=10;]
 	Criminal[index=0;pos=(1,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(0,4);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=7;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 22 - TURN : 7
 ArrayMovingObject[count=10;capacity=10;]
 	Criminal[index=0;pos=(1,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(0,4);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=7;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 22 - TURN : 8
 ArrayMovingObject[count=10;capacity=10;]
 	Criminal[index=0;pos=(1,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(0,4);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,6);type=W;dist=2]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,6);type=W;dist=1]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=7;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 22 - TURN : 9
 ArrayMovingObject[count=10;capacity=10;]
 	Criminal[index=0;pos=(1,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(0,4);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,5);type=W;dist=1]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=7;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 23 - TURN : 0
 ArrayMovingObject[count=10;capacity=10;]
 	Criminal[index=0;pos=(0,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(0,4);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,5);type=W;dist=1]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=7;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 23 - TURN : 1
 ArrayMovingObject[count=10;capacity=10;]
 	Criminal[index=0;pos=(0,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(0,4);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,5);type=W;dist=1]
-	Robot[pos=(0,5);type=W;dist=1]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=7;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 23 - TURN : 2
@@ -2406,7 +2406,7 @@ ArrayMovingObject[count=10;capacity=10;]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=10;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 23 - TURN : 3
@@ -2424,7 +2424,7 @@ ArrayMovingObject[count=10;capacity=10;]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=10;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 23 - TURN : 4
@@ -2442,7 +2442,7 @@ ArrayMovingObject[count=10;capacity=10;]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=10;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 23 - TURN : 5
@@ -2460,7 +2460,7 @@ ArrayMovingObject[count=10;capacity=10;]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=10;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 23 - TURN : 6
@@ -2478,7 +2478,7 @@ ArrayMovingObject[count=10;capacity=10;]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=10;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 23 - TURN : 7
@@ -2496,7 +2496,7 @@ ArrayMovingObject[count=10;capacity=10;]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=10;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 23 - TURN : 8
@@ -2514,7 +2514,7 @@ ArrayMovingObject[count=10;capacity=10;]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=10;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 23 - TURN : 9
@@ -2532,7 +2532,7 @@ ArrayMovingObject[count=10;capacity=10;]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=10;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 24 - TURN : 0
@@ -2550,7 +2550,7 @@ ArrayMovingObject[count=10;capacity=10;]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=10;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 24 - TURN : 1
@@ -2568,187 +2568,187 @@ ArrayMovingObject[count=10;capacity=10;]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=10;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 24 - TURN : 2
 ArrayMovingObject[count=10;capacity=10;]
 	Criminal[index=0;pos=(1,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(1,5);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(1,6);type=C;dist=]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=10;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 24 - TURN : 3
 ArrayMovingObject[count=10;capacity=10;]
 	Criminal[index=0;pos=(1,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(1,5);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=10;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 24 - TURN : 4
 ArrayMovingObject[count=10;capacity=10;]
 	Criminal[index=0;pos=(1,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(1,5);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=10;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 24 - TURN : 5
 ArrayMovingObject[count=10;capacity=10;]
 	Criminal[index=0;pos=(1,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(1,5);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=10;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 24 - TURN : 6
 ArrayMovingObject[count=10;capacity=10;]
 	Criminal[index=0;pos=(1,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(1,5);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=10;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 24 - TURN : 7
 ArrayMovingObject[count=10;capacity=10;]
 	Criminal[index=0;pos=(1,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(1,5);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(0,6);type=W;dist=2]
-	Robot[pos=(0,6);type=W;dist=2]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,6);type=W;dist=1]
+	Robot[pos=(0,6);type=W;dist=1]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=10;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 24 - TURN : 8
 ArrayMovingObject[count=10;capacity=10;]
 	Criminal[index=0;pos=(1,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(1,5);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(0,6);type=W;dist=2]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,6);type=W;dist=1]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=10;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 24 - TURN : 9
 ArrayMovingObject[count=10;capacity=10;]
 	Criminal[index=0;pos=(1,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(1,5);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=10;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 25 - TURN : 0
 ArrayMovingObject[count=10;capacity=10;]
 	Criminal[index=0;pos=(0,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(1,5);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=10;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 25 - TURN : 1
 ArrayMovingObject[count=10;capacity=10;]
 	Criminal[index=0;pos=(0,6)]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
-	Watson[index=2;pos=(1,5);moving_rule=DULR]
+	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=1]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=10;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 25 - TURN : 2
@@ -2757,16 +2757,16 @@ ArrayMovingObject[count=10;capacity=10;]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
 	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(0,6);type=C;dist=]
-	Robot[pos=(1,6);type=W;dist=2]
-	Robot[pos=(1,6);type=W;dist=2]
-	Robot[pos=(1,6);type=W;dist=2]
-	Robot[pos=(1,6);type=W;dist=2]
-	Robot[pos=(1,6);type=W;dist=2]
-	Robot[pos=(1,6);type=W;dist=2]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=10;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 25 - TURN : 3
@@ -2775,16 +2775,16 @@ ArrayMovingObject[count=10;capacity=10;]
 	Sherlock[index=1;pos=(1,2);moving_rule=RUURRDL]
 	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(1,6);type=C;dist=]
-	Robot[pos=(1,6);type=W;dist=2]
-	Robot[pos=(1,6);type=W;dist=2]
-	Robot[pos=(1,6);type=W;dist=2]
-	Robot[pos=(1,6);type=W;dist=2]
-	Robot[pos=(1,6);type=W;dist=2]
-	Robot[pos=(1,6);type=W;dist=2]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=10;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 25 - TURN : 4
@@ -2794,15 +2794,15 @@ ArrayMovingObject[count=10;capacity=10;]
 	Watson[index=2;pos=(0,5);moving_rule=DULR]
 	Robot[pos=(1,6);type=C;dist=]
 	Robot[pos=(0,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=2]
-	Robot[pos=(1,6);type=W;dist=2]
-	Robot[pos=(1,6);type=W;dist=2]
-	Robot[pos=(1,6);type=W;dist=2]
-	Robot[pos=(1,6);type=W;dist=2]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=10;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 25 - TURN : 5
@@ -2813,14 +2813,14 @@ ArrayMovingObject[count=10;capacity=10;]
 	Robot[pos=(1,6);type=C;dist=]
 	Robot[pos=(0,6);type=W;dist=1]
 	Robot[pos=(0,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=2]
-	Robot[pos=(1,6);type=W;dist=2]
-	Robot[pos=(1,6);type=W;dist=2]
-	Robot[pos=(1,6);type=W;dist=2]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=10;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 25 - TURN : 6
@@ -2832,13 +2832,13 @@ ArrayMovingObject[count=10;capacity=10;]
 	Robot[pos=(0,6);type=W;dist=1]
 	Robot[pos=(0,6);type=W;dist=1]
 	Robot[pos=(0,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=2]
-	Robot[pos=(1,6);type=W;dist=2]
-	Robot[pos=(1,6);type=W;dist=2]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=10;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 25 - TURN : 7
@@ -2851,12 +2851,12 @@ ArrayMovingObject[count=10;capacity=10;]
 	Robot[pos=(0,6);type=W;dist=1]
 	Robot[pos=(0,6);type=W;dist=1]
 	Robot[pos=(0,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=2]
-	Robot[pos=(1,6);type=W;dist=2]
+	Robot[pos=(0,5);type=W;dist=0]
+	Robot[pos=(0,5);type=W;dist=0]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=10;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 25 - TURN : 8
@@ -2870,11 +2870,11 @@ ArrayMovingObject[count=10;capacity=10;]
 	Robot[pos=(0,6);type=W;dist=1]
 	Robot[pos=(0,6);type=W;dist=1]
 	Robot[pos=(0,6);type=W;dist=1]
-	Robot[pos=(1,6);type=W;dist=2]
+	Robot[pos=(0,5);type=W;dist=0]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=10;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
 
 *************AFTER MOVE*************
 ROUND : 25 - TURN : 9
@@ -2892,4 +2892,4 @@ ArrayMovingObject[count=10;capacity=10;]
 Sherlock HP_265 EXP_182
 Watson HP_374 EXP_0
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=10;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
+WatsonBag : Bag[count=15;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]

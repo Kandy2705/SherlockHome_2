@@ -246,12 +246,14 @@ Position Sherlock::getNextPosition()
 }
 void Sherlock::move()
 {
-    Position vitritiep = getNextPosition();
-    if (vitritiep == Position::npos){
-        return;
+    if (getEXP() != 0){
+        Position vitritiep = getNextPosition();
+        if (vitritiep == Position::npos){
+            return;
+        }
+        pos.setRow(vitritiep.getRow());
+        pos.setCol(vitritiep.getCol());
     }
-    pos.setRow(vitritiep.getRow());
-    pos.setCol(vitritiep.getCol());
 }
 string Sherlock::str() const
 {
@@ -351,12 +353,14 @@ Position Watson::getNextPosition()
 
 void Watson::move()
 {
-    Position vitritiep = getNextPosition();
-    if (vitritiep == Position::npos){
-        return;
+    if (getEXP() != 0){
+        Position vitritiep = getNextPosition();
+        if (vitritiep == Position::npos){
+            return;
+        }
+        pos.setRow(vitritiep.getRow());
+        pos.setCol(vitritiep.getCol());
     }
-    pos.setRow(vitritiep.getRow());
-    pos.setCol(vitritiep.getCol());
 }
 string Watson::str() const
 {
@@ -1321,7 +1325,7 @@ void StudyPinkProgram::run(bool verbose, ofstream &OUTPUT)
                     << "ROUND : " << istep << " - TURN : " << i << endl;
 
 
-            if (istep == 14 && i == 3){
+            if (istep == 13 && i == 2){
                 string tempp;
             }
             arr_mv_objs->get(i)->move();
@@ -1845,9 +1849,6 @@ bool ArrayMovingObject::checkMeet(int index)
                     if (robottamthoi->getType() == C){
                         if (sherlock->meet(dynamic_cast<RobotC*>(robottamthoi)) == true) {
                             sherlock->setPos(criminal->getCurrentPosition());
-//                            sherlock->getCurrentPosition().setRow(criminal->getCurrentPosition().getRow());
-//                            sherlock->getCurrentPosition().setCol(criminal->getCurrentPosition().getCol());
-//                            sherlock->setPos()
                             return true;
                         }
                     }
@@ -1967,16 +1968,16 @@ bool ArrayMovingObject::checkMeet(int index)
 bool Sherlock::meet(RobotS *robotS)
 {
     // TODO: Xử lý khi gặp robot S
-    BaseItem* vatphamsudung = this->bag->find(EXCEMPTION_CARD);
-    if (vatphamsudung != nullptr){
-        if(vatphamsudung->canUse(this, robotS)){
-            vatphamsudung = this->bag->get(EXCEMPTION_CARD);
-            vatphamsudung->use(this, robotS);
-        }
-        else vatphamsudung = nullptr;
-    }
 
     if (this->exp > 400){
+        BaseItem* vatphamsudung = this->bag->find(EXCEMPTION_CARD);
+        if (vatphamsudung != nullptr){
+            if(vatphamsudung->canUse(this, robotS)){
+                vatphamsudung = this->bag->get(EXCEMPTION_CARD);
+                vatphamsudung->use(this, robotS);
+            }
+            else vatphamsudung = nullptr;
+        }
         BaseItem * newItem;
         if (robotS->getItem()->getType() == MAGIC_BOOK){
             newItem = new MagicBook();
@@ -2069,16 +2070,16 @@ bool Sherlock::meet(RobotW *robotW)
 }
 bool Sherlock::meet(RobotSW *robotSW)
 {
-    BaseItem* vatphamsudung = this->bag->find(EXCEMPTION_CARD);
-    if (vatphamsudung != nullptr){
-        if(vatphamsudung->canUse(this, robotSW)){
-            vatphamsudung = this->bag->get(EXCEMPTION_CARD);
-            vatphamsudung->use(this, robotSW);
-        }
-        else vatphamsudung = nullptr;
-    }
 
     if (this->exp > 300 && this->hp > 335){
+        BaseItem* vatphamsudung = this->bag->find(EXCEMPTION_CARD);
+        if (vatphamsudung != nullptr){
+            if(vatphamsudung->canUse(this, robotSW)){
+                vatphamsudung = this->bag->get(EXCEMPTION_CARD);
+                vatphamsudung->use(this, robotSW);
+            }
+            else vatphamsudung = nullptr;
+        }
 
         BaseItem * newItem;
         if (robotSW->getItem()->getType() == MAGIC_BOOK){

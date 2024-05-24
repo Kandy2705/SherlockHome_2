@@ -1311,7 +1311,7 @@ ArrayMovingObject[count=7;capacity=7;]
 	Robot[pos=(0,1);type=SW;dist=0]
 	Robot[pos=(0,1);type=W;dist=0]
 	Robot[pos=(0,1);type=W;dist=0]
-Sherlock HP_120 EXP_360
+Sherlock HP_141 EXP_423
 Watson HP_94 EXP_448
 SherlockBag : Bag[count=6;ExcemptionCard,FirstAid,FirstAid,FirstAid,FirstAid,FirstAid]
 WatsonBag : Bag[count=2;ExcemptionCard,ExcemptionCard]
@@ -1326,7 +1326,7 @@ ArrayMovingObject[count=7;capacity=7;]
 	Robot[pos=(0,1);type=SW;dist=1]
 	Robot[pos=(0,1);type=W;dist=1]
 	Robot[pos=(0,1);type=W;dist=1]
-Sherlock HP_120 EXP_360
+Sherlock HP_141 EXP_423
 Watson HP_94 EXP_448
 SherlockBag : Bag[count=6;ExcemptionCard,FirstAid,FirstAid,FirstAid,FirstAid,FirstAid]
 WatsonBag : Bag[count=2;ExcemptionCard,ExcemptionCard]
@@ -1341,7 +1341,7 @@ ArrayMovingObject[count=7;capacity=7;]
 	Robot[pos=(0,1);type=SW;dist=1]
 	Robot[pos=(0,1);type=W;dist=1]
 	Robot[pos=(0,1);type=W;dist=1]
-Sherlock HP_120 EXP_360
+Sherlock HP_141 EXP_423
 Watson HP_94 EXP_448
 SherlockBag : Bag[count=6;ExcemptionCard,FirstAid,FirstAid,FirstAid,FirstAid,FirstAid]
 WatsonBag : Bag[count=2;ExcemptionCard,ExcemptionCard]
@@ -1356,7 +1356,7 @@ ArrayMovingObject[count=7;capacity=7;]
 	Robot[pos=(0,3);type=SW;dist=5]
 	Robot[pos=(0,1);type=W;dist=1]
 	Robot[pos=(0,1);type=W;dist=1]
-Sherlock HP_120 EXP_360
+Sherlock HP_141 EXP_423
 Watson HP_94 EXP_448
 SherlockBag : Bag[count=6;ExcemptionCard,FirstAid,FirstAid,FirstAid,FirstAid,FirstAid]
 WatsonBag : Bag[count=2;ExcemptionCard,ExcemptionCard]
@@ -1371,7 +1371,7 @@ ArrayMovingObject[count=7;capacity=7;]
 	Robot[pos=(0,3);type=SW;dist=5]
 	Robot[pos=(0,0);type=W;dist=0]
 	Robot[pos=(0,1);type=W;dist=1]
-Sherlock HP_120 EXP_360
+Sherlock HP_141 EXP_423
 Watson HP_90 EXP_448
 SherlockBag : Bag[count=6;ExcemptionCard,FirstAid,FirstAid,FirstAid,FirstAid,FirstAid]
 WatsonBag : Bag[count=2;ExcemptionCard,ExcemptionCard]
@@ -1386,7 +1386,7 @@ ArrayMovingObject[count=7;capacity=7;]
 	Robot[pos=(0,3);type=SW;dist=5]
 	Robot[pos=(0,0);type=W;dist=0]
 	Robot[pos=(0,0);type=W;dist=0]
-Sherlock HP_120 EXP_360
+Sherlock HP_141 EXP_423
 Watson HP_86 EXP_448
 SherlockBag : Bag[count=6;ExcemptionCard,FirstAid,FirstAid,FirstAid,FirstAid,FirstAid]
 WatsonBag : Bag[count=2;ExcemptionCard,ExcemptionCard]

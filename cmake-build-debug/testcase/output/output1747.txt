@@ -1640,7 +1640,7 @@ ArrayMovingObject[count=8;capacity=8;]
 	Robot[pos=(0,1);type=SW;dist=1]
 Sherlock HP_53 EXP_246
 Watson HP_59 EXP_124
-SherlockBag : Bag[count=6;PassingCard,PassingCard,ExcemptionCard,PassingCard,ExcemptionCard,PassingCard]
+SherlockBag : Bag[count=7;PassingCard,ExcemptionCard,PassingCard,ExcemptionCard,PassingCard,ExcemptionCard,PassingCard]
 WatsonBag : Bag[count=0;]
 
 *************AFTER MOVE*************
@@ -1656,7 +1656,7 @@ ArrayMovingObject[count=8;capacity=8;]
 	Robot[pos=(0,1);type=SW;dist=1]
 Sherlock HP_53 EXP_246
 Watson HP_55 EXP_124
-SherlockBag : Bag[count=6;PassingCard,PassingCard,ExcemptionCard,PassingCard,ExcemptionCard,PassingCard]
+SherlockBag : Bag[count=7;PassingCard,ExcemptionCard,PassingCard,ExcemptionCard,PassingCard,ExcemptionCard,PassingCard]
 WatsonBag : Bag[count=0;]
 
 *************AFTER MOVE*************
@@ -1672,7 +1672,7 @@ ArrayMovingObject[count=8;capacity=8;]
 	Robot[pos=(0,1);type=SW;dist=1]
 Sherlock HP_53 EXP_246
 Watson HP_55 EXP_124
-SherlockBag : Bag[count=6;PassingCard,PassingCard,ExcemptionCard,PassingCard,ExcemptionCard,PassingCard]
+SherlockBag : Bag[count=7;PassingCard,ExcemptionCard,PassingCard,ExcemptionCard,PassingCard,ExcemptionCard,PassingCard]
 WatsonBag : Bag[count=0;]
 
 *************AFTER MOVE*************
@@ -1688,7 +1688,7 @@ ArrayMovingObject[count=8;capacity=8;]
 	Robot[pos=(0,1);type=SW;dist=1]
 Sherlock HP_53 EXP_246
 Watson HP_55 EXP_124
-SherlockBag : Bag[count=6;PassingCard,PassingCard,ExcemptionCard,PassingCard,ExcemptionCard,PassingCard]
+SherlockBag : Bag[count=7;PassingCard,ExcemptionCard,PassingCard,ExcemptionCard,PassingCard,ExcemptionCard,PassingCard]
 WatsonBag : Bag[count=0;]
 
 *************AFTER MOVE*************
@@ -1704,7 +1704,7 @@ ArrayMovingObject[count=8;capacity=8;]
 	Robot[pos=(0,1);type=SW;dist=1]
 Sherlock HP_53 EXP_246
 Watson HP_55 EXP_124
-SherlockBag : Bag[count=6;PassingCard,PassingCard,ExcemptionCard,PassingCard,ExcemptionCard,PassingCard]
+SherlockBag : Bag[count=7;PassingCard,ExcemptionCard,PassingCard,ExcemptionCard,PassingCard,ExcemptionCard,PassingCard]
 WatsonBag : Bag[count=0;]
 
 *************AFTER MOVE*************
@@ -1720,7 +1720,7 @@ ArrayMovingObject[count=8;capacity=8;]
 	Robot[pos=(0,1);type=SW;dist=1]
 Sherlock HP_53 EXP_246
 Watson HP_55 EXP_124
-SherlockBag : Bag[count=4;PassingCard,PassingCard,PassingCard,PassingCard]
+SherlockBag : Bag[count=6;PassingCard,PassingCard,ExcemptionCard,PassingCard,ExcemptionCard,PassingCard]
 WatsonBag : Bag[count=0;]
 
 *************AFTER MOVE*************
@@ -1736,7 +1736,7 @@ ArrayMovingObject[count=8;capacity=8;]
 	Robot[pos=(1,2);type=SW;dist=3]
 Sherlock HP_53 EXP_246
 Watson HP_55 EXP_124
-SherlockBag : Bag[count=4;PassingCard,PassingCard,PassingCard,PassingCard]
+SherlockBag : Bag[count=6;PassingCard,PassingCard,ExcemptionCard,PassingCard,ExcemptionCard,PassingCard]
 WatsonBag : Bag[count=0;]
 
 *************AFTER MOVE*************
@@ -1752,7 +1752,7 @@ ArrayMovingObject[count=8;capacity=8;]
 	Robot[pos=(1,2);type=SW;dist=3]
 Sherlock HP_53 EXP_246
 Watson HP_55 EXP_124
-SherlockBag : Bag[count=4;PassingCard,PassingCard,PassingCard,PassingCard]
+SherlockBag : Bag[count=6;PassingCard,PassingCard,ExcemptionCard,PassingCard,ExcemptionCard,PassingCard]
 WatsonBag : Bag[count=0;]
 
 *************AFTER MOVE*************
@@ -1766,9 +1766,9 @@ ArrayMovingObject[count=8;capacity=8;]
 	Robot[pos=(1,2);type=W;dist=1]
 	Robot[pos=(0,1);type=S;dist=0]
 	Robot[pos=(1,2);type=SW;dist=3]
-Sherlock HP_53 EXP_222
+Sherlock HP_53 EXP_246
 Watson HP_55 EXP_124
-SherlockBag : Bag[count=4;PassingCard,PassingCard,PassingCard,PassingCard]
+SherlockBag : Bag[count=5;PassingCard,PassingCard,PassingCard,ExcemptionCard,PassingCard]
 WatsonBag : Bag[count=0;]
 
 *************AFTER MOVE*************
@@ -1782,9 +1782,9 @@ ArrayMovingObject[count=8;capacity=8;]
 	Robot[pos=(1,2);type=W;dist=1]
 	Robot[pos=(0,1);type=S;dist=0]
 	Robot[pos=(1,2);type=SW;dist=3]
-Sherlock HP_53 EXP_222
+Sherlock HP_53 EXP_246
 Watson HP_55 EXP_124
-SherlockBag : Bag[count=4;PassingCard,PassingCard,PassingCard,PassingCard]
+SherlockBag : Bag[count=5;PassingCard,PassingCard,PassingCard,ExcemptionCard,PassingCard]
 WatsonBag : Bag[count=0;]
 
 *************AFTER MOVE*************
@@ -1798,9 +1798,9 @@ ArrayMovingObject[count=8;capacity=8;]
 	Robot[pos=(1,2);type=W;dist=1]
 	Robot[pos=(0,1);type=S;dist=0]
 	Robot[pos=(1,2);type=SW;dist=3]
-Sherlock HP_53 EXP_222
+Sherlock HP_53 EXP_246
 Watson HP_55 EXP_124
-SherlockBag : Bag[count=4;PassingCard,PassingCard,PassingCard,PassingCard]
+SherlockBag : Bag[count=5;PassingCard,PassingCard,PassingCard,ExcemptionCard,PassingCard]
 WatsonBag : Bag[count=0;]
 
 *************AFTER MOVE*************
@@ -1814,9 +1814,9 @@ ArrayMovingObject[count=8;capacity=8;]
 	Robot[pos=(1,2);type=W;dist=1]
 	Robot[pos=(0,1);type=S;dist=0]
 	Robot[pos=(1,2);type=SW;dist=3]
-Sherlock HP_53 EXP_222
+Sherlock HP_53 EXP_246
 Watson HP_53 EXP_124
-SherlockBag : Bag[count=4;PassingCard,PassingCard,PassingCard,PassingCard]
+SherlockBag : Bag[count=5;PassingCard,PassingCard,PassingCard,ExcemptionCard,PassingCard]
 WatsonBag : Bag[count=0;]
 
 *************AFTER MOVE*************
@@ -1830,9 +1830,9 @@ ArrayMovingObject[count=8;capacity=8;]
 	Robot[pos=(0,2);type=W;dist=0]
 	Robot[pos=(0,1);type=S;dist=0]
 	Robot[pos=(1,2);type=SW;dist=3]
-Sherlock HP_53 EXP_222
+Sherlock HP_53 EXP_246
 Watson HP_51 EXP_124
-SherlockBag : Bag[count=4;PassingCard,PassingCard,PassingCard,PassingCard]
+SherlockBag : Bag[count=5;PassingCard,PassingCard,PassingCard,ExcemptionCard,PassingCard]
 WatsonBag : Bag[count=0;]
 
 *************AFTER MOVE*************
@@ -1846,9 +1846,9 @@ ArrayMovingObject[count=8;capacity=8;]
 	Robot[pos=(0,2);type=W;dist=0]
 	Robot[pos=(0,2);type=S;dist=1]
 	Robot[pos=(1,2);type=SW;dist=3]
-Sherlock HP_53 EXP_222
+Sherlock HP_53 EXP_246
 Watson HP_51 EXP_124
-SherlockBag : Bag[count=4;PassingCard,PassingCard,PassingCard,PassingCard]
+SherlockBag : Bag[count=5;PassingCard,PassingCard,PassingCard,ExcemptionCard,PassingCard]
 WatsonBag : Bag[count=0;]
 
 *************AFTER MOVE*************
@@ -1862,7 +1862,7 @@ ArrayMovingObject[count=8;capacity=8;]
 	Robot[pos=(0,2);type=W;dist=0]
 	Robot[pos=(0,2);type=S;dist=1]
 	Robot[pos=(0,1);type=SW;dist=1]
-Sherlock HP_46 EXP_189
+Sherlock HP_53 EXP_246
 Watson HP_51 EXP_124
 SherlockBag : Bag[count=4;PassingCard,PassingCard,PassingCard,PassingCard]
 WatsonBag : Bag[count=0;]
@@ -1878,7 +1878,7 @@ ArrayMovingObject[count=8;capacity=8;]
 	Robot[pos=(0,2);type=W;dist=0]
 	Robot[pos=(0,2);type=S;dist=1]
 	Robot[pos=(0,1);type=SW;dist=1]
-Sherlock HP_46 EXP_189
+Sherlock HP_53 EXP_246
 Watson HP_51 EXP_124
 SherlockBag : Bag[count=4;PassingCard,PassingCard,PassingCard,PassingCard]
 WatsonBag : Bag[count=0;]
@@ -1894,9 +1894,9 @@ ArrayMovingObject[count=8;capacity=8;]
 	Robot[pos=(0,2);type=W;dist=0]
 	Robot[pos=(0,2);type=S;dist=0]
 	Robot[pos=(0,1);type=SW;dist=2]
-Sherlock HP_46 EXP_171
+Sherlock HP_53 EXP_246
 Watson HP_51 EXP_124
-SherlockBag : Bag[count=6;ExcemptionCard,PassingCard,PassingCard,PassingCard,PassingCard,PassingCard]
+SherlockBag : Bag[count=5;PassingCard,PassingCard,PassingCard,PassingCard,PassingCard]
 WatsonBag : Bag[count=0;]
 
 *************AFTER MOVE*************
@@ -1910,9 +1910,9 @@ ArrayMovingObject[count=8;capacity=8;]
 	Robot[pos=(0,2);type=W;dist=1]
 	Robot[pos=(0,2);type=S;dist=0]
 	Robot[pos=(0,1);type=SW;dist=1]
-Sherlock HP_46 EXP_171
+Sherlock HP_53 EXP_246
 Watson HP_44 EXP_106
-SherlockBag : Bag[count=6;ExcemptionCard,PassingCard,PassingCard,PassingCard,PassingCard,PassingCard]
+SherlockBag : Bag[count=5;PassingCard,PassingCard,PassingCard,PassingCard,PassingCard]
 WatsonBag : Bag[count=0;]
 
 *************AFTER MOVE*************
@@ -1926,9 +1926,9 @@ ArrayMovingObject[count=8;capacity=8;]
 	Robot[pos=(0,2);type=W;dist=1]
 	Robot[pos=(0,2);type=S;dist=0]
 	Robot[pos=(0,1);type=SW;dist=1]
-Sherlock HP_46 EXP_171
+Sherlock HP_53 EXP_246
 Watson HP_44 EXP_106
-SherlockBag : Bag[count=6;ExcemptionCard,PassingCard,PassingCard,PassingCard,PassingCard,PassingCard]
+SherlockBag : Bag[count=5;PassingCard,PassingCard,PassingCard,PassingCard,PassingCard]
 WatsonBag : Bag[count=0;]
 
 *************AFTER MOVE*************
@@ -1942,9 +1942,9 @@ ArrayMovingObject[count=8;capacity=8;]
 	Robot[pos=(0,2);type=W;dist=1]
 	Robot[pos=(0,2);type=S;dist=0]
 	Robot[pos=(0,1);type=SW;dist=1]
-Sherlock HP_46 EXP_171
+Sherlock HP_53 EXP_246
 Watson HP_42 EXP_106
-SherlockBag : Bag[count=6;ExcemptionCard,PassingCard,PassingCard,PassingCard,PassingCard,PassingCard]
+SherlockBag : Bag[count=5;PassingCard,PassingCard,PassingCard,PassingCard,PassingCard]
 WatsonBag : Bag[count=0;]
 
 *************AFTER MOVE*************
@@ -1958,9 +1958,9 @@ ArrayMovingObject[count=8;capacity=8;]
 	Robot[pos=(0,1);type=W;dist=0]
 	Robot[pos=(0,2);type=S;dist=0]
 	Robot[pos=(0,1);type=SW;dist=1]
-Sherlock HP_46 EXP_171
+Sherlock HP_53 EXP_246
 Watson HP_40 EXP_106
-SherlockBag : Bag[count=6;ExcemptionCard,PassingCard,PassingCard,PassingCard,PassingCard,PassingCard]
+SherlockBag : Bag[count=5;PassingCard,PassingCard,PassingCard,PassingCard,PassingCard]
 WatsonBag : Bag[count=0;]
 
 *************AFTER MOVE*************
@@ -1974,9 +1974,9 @@ ArrayMovingObject[count=8;capacity=8;]
 	Robot[pos=(0,1);type=W;dist=0]
 	Robot[pos=(1,2);type=S;dist=1]
 	Robot[pos=(0,1);type=SW;dist=1]
-Sherlock HP_46 EXP_171
+Sherlock HP_53 EXP_246
 Watson HP_40 EXP_106
-SherlockBag : Bag[count=6;ExcemptionCard,PassingCard,PassingCard,PassingCard,PassingCard,PassingCard]
+SherlockBag : Bag[count=5;PassingCard,PassingCard,PassingCard,PassingCard,PassingCard]
 WatsonBag : Bag[count=0;]
 
 *************AFTER MOVE*************
@@ -1990,7 +1990,7 @@ ArrayMovingObject[count=8;capacity=8;]
 	Robot[pos=(0,1);type=W;dist=0]
 	Robot[pos=(1,2);type=S;dist=1]
 	Robot[pos=(1,2);type=SW;dist=3]
-Sherlock HP_46 EXP_171
+Sherlock HP_53 EXP_246
 Watson HP_40 EXP_106
-SherlockBag : Bag[count=6;ExcemptionCard,PassingCard,PassingCard,PassingCard,PassingCard,PassingCard]
+SherlockBag : Bag[count=5;PassingCard,PassingCard,PassingCard,PassingCard,PassingCard]
 WatsonBag : Bag[count=0;]

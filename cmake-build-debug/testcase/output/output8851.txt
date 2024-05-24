@@ -1639,7 +1639,7 @@ ArrayMovingObject[count=9;capacity=9;]
 	Robot[pos=(0,4);type=W;dist=4]
 	Robot[pos=(1,0);type=SW;dist=1]
 	Robot[pos=(4,5);type=S;dist=8]
-Sherlock HP_204 EXP_267
+Sherlock HP_239 EXP_313
 Watson HP_455 EXP_153
 SherlockBag : Bag[count=0;]
 WatsonBag : Bag[count=4;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
@@ -1656,7 +1656,7 @@ ArrayMovingObject[count=9;capacity=9;]
 	Robot[pos=(0,4);type=W;dist=4]
 	Robot[pos=(1,0);type=SW;dist=1]
 	Robot[pos=(3,5);type=S;dist=7]
-Sherlock HP_204 EXP_267
+Sherlock HP_239 EXP_313
 Watson HP_455 EXP_153
 SherlockBag : Bag[count=0;]
 WatsonBag : Bag[count=4;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
@@ -1673,7 +1673,7 @@ ArrayMovingObject[count=9;capacity=9;]
 	Robot[pos=(0,4);type=W;dist=4]
 	Robot[pos=(1,0);type=SW;dist=1]
 	Robot[pos=(3,5);type=S;dist=7]
-Sherlock HP_204 EXP_267
+Sherlock HP_239 EXP_313
 Watson HP_455 EXP_153
 SherlockBag : Bag[count=0;]
 WatsonBag : Bag[count=4;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
@@ -1690,7 +1690,7 @@ ArrayMovingObject[count=9;capacity=9;]
 	Robot[pos=(0,4);type=W;dist=4]
 	Robot[pos=(1,0);type=SW;dist=1]
 	Robot[pos=(3,5);type=S;dist=7]
-Sherlock HP_174 EXP_227
+Sherlock HP_204 EXP_267
 Watson HP_455 EXP_153
 SherlockBag : Bag[count=0;]
 WatsonBag : Bag[count=4;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
@@ -1707,7 +1707,7 @@ ArrayMovingObject[count=9;capacity=9;]
 	Robot[pos=(0,4);type=W;dist=4]
 	Robot[pos=(1,0);type=SW;dist=1]
 	Robot[pos=(3,5);type=S;dist=7]
-Sherlock HP_174 EXP_227
+Sherlock HP_204 EXP_267
 Watson HP_455 EXP_153
 SherlockBag : Bag[count=0;]
 WatsonBag : Bag[count=5;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
@@ -1724,7 +1724,7 @@ ArrayMovingObject[count=9;capacity=9;]
 	Robot[pos=(0,4);type=W;dist=4]
 	Robot[pos=(1,0);type=SW;dist=1]
 	Robot[pos=(3,5);type=S;dist=7]
-Sherlock HP_174 EXP_227
+Sherlock HP_204 EXP_267
 Watson HP_455 EXP_153
 SherlockBag : Bag[count=0;]
 WatsonBag : Bag[count=5;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
@@ -1741,7 +1741,7 @@ ArrayMovingObject[count=9;capacity=9;]
 	Robot[pos=(0,4);type=W;dist=4]
 	Robot[pos=(1,0);type=SW;dist=1]
 	Robot[pos=(3,5);type=S;dist=7]
-Sherlock HP_174 EXP_227
+Sherlock HP_204 EXP_267
 Watson HP_455 EXP_153
 SherlockBag : Bag[count=0;]
 WatsonBag : Bag[count=5;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
@@ -1758,7 +1758,7 @@ ArrayMovingObject[count=9;capacity=9;]
 	Robot[pos=(0,4);type=W;dist=4]
 	Robot[pos=(1,0);type=SW;dist=1]
 	Robot[pos=(3,5);type=S;dist=7]
-Sherlock HP_174 EXP_227
+Sherlock HP_204 EXP_267
 Watson HP_455 EXP_153
 SherlockBag : Bag[count=0;]
 WatsonBag : Bag[count=5;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
@@ -1775,7 +1775,7 @@ ArrayMovingObject[count=9;capacity=9;]
 	Robot[pos=(0,3);type=W;dist=3]
 	Robot[pos=(1,0);type=SW;dist=1]
 	Robot[pos=(3,5);type=S;dist=7]
-Sherlock HP_174 EXP_227
+Sherlock HP_204 EXP_267
 Watson HP_455 EXP_153
 SherlockBag : Bag[count=0;]
 WatsonBag : Bag[count=5;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
@@ -1792,7 +1792,7 @@ ArrayMovingObject[count=9;capacity=9;]
 	Robot[pos=(0,3);type=W;dist=3]
 	Robot[pos=(0,1);type=SW;dist=3]
 	Robot[pos=(3,5);type=S;dist=7]
-Sherlock HP_174 EXP_227
+Sherlock HP_204 EXP_267
 Watson HP_455 EXP_153
 SherlockBag : Bag[count=0;]
 WatsonBag : Bag[count=5;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
@@ -1809,7 +1809,7 @@ ArrayMovingObject[count=9;capacity=9;]
 	Robot[pos=(0,3);type=W;dist=3]
 	Robot[pos=(0,1);type=SW;dist=3]
 	Robot[pos=(2,5);type=S;dist=6]
-Sherlock HP_174 EXP_227
+Sherlock HP_204 EXP_267
 Watson HP_455 EXP_153
 SherlockBag : Bag[count=0;]
 WatsonBag : Bag[count=5;ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard,ExcemptionCard]
