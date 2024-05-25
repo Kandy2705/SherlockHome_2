@@ -272,7 +272,7 @@ ArrayMovingObject[count=5;capacity=6;]
 Sherlock HP_70 EXP_675
 Watson HP_370 EXP_57
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 6 - TURN : 0
@@ -285,7 +285,7 @@ ArrayMovingObject[count=5;capacity=6;]
 Sherlock HP_70 EXP_675
 Watson HP_370 EXP_57
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 6 - TURN : 1
@@ -298,7 +298,7 @@ ArrayMovingObject[count=5;capacity=6;]
 Sherlock HP_70 EXP_675
 Watson HP_370 EXP_57
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 6 - TURN : 2
@@ -311,7 +311,7 @@ ArrayMovingObject[count=5;capacity=6;]
 Sherlock HP_70 EXP_675
 Watson HP_370 EXP_57
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 6 - TURN : 3
@@ -324,7 +324,7 @@ ArrayMovingObject[count=5;capacity=6;]
 Sherlock HP_70 EXP_675
 Watson HP_370 EXP_57
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 6 - TURN : 4
@@ -337,7 +337,7 @@ ArrayMovingObject[count=5;capacity=6;]
 Sherlock HP_70 EXP_675
 Watson HP_370 EXP_57
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 7 - TURN : 0
@@ -350,7 +350,7 @@ ArrayMovingObject[count=5;capacity=6;]
 Sherlock HP_70 EXP_675
 Watson HP_370 EXP_57
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 7 - TURN : 1
@@ -363,7 +363,7 @@ ArrayMovingObject[count=5;capacity=6;]
 Sherlock HP_70 EXP_675
 Watson HP_370 EXP_57
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 7 - TURN : 2
@@ -376,7 +376,7 @@ ArrayMovingObject[count=5;capacity=6;]
 Sherlock HP_70 EXP_675
 Watson HP_370 EXP_57
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 7 - TURN : 3
@@ -389,7 +389,7 @@ ArrayMovingObject[count=5;capacity=6;]
 Sherlock HP_70 EXP_675
 Watson HP_370 EXP_57
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 7 - TURN : 4
@@ -402,7 +402,7 @@ ArrayMovingObject[count=5;capacity=6;]
 Sherlock HP_70 EXP_675
 Watson HP_370 EXP_57
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 8 - TURN : 0
@@ -416,7 +416,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_70 EXP_675
 Watson HP_370 EXP_57
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 8 - TURN : 1
@@ -430,7 +430,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_70 EXP_675
 Watson HP_370 EXP_57
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 8 - TURN : 2
@@ -444,7 +444,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_70 EXP_675
 Watson HP_370 EXP_57
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 8 - TURN : 3
@@ -458,7 +458,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_70 EXP_675
 Watson HP_370 EXP_57
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 8 - TURN : 4
@@ -472,7 +472,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_60 EXP_574
 Watson HP_370 EXP_57
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 8 - TURN : 5
@@ -486,7 +486,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_60 EXP_574
 Watson HP_370 EXP_57
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 9 - TURN : 0
@@ -500,7 +500,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_60 EXP_574
 Watson HP_370 EXP_57
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 9 - TURN : 1
@@ -514,7 +514,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_51 EXP_488
 Watson HP_370 EXP_57
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 9 - TURN : 2
@@ -528,7 +528,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_51 EXP_488
 Watson HP_370 EXP_57
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 9 - TURN : 3
@@ -542,7 +542,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_51 EXP_488
 Watson HP_370 EXP_57
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 9 - TURN : 4
@@ -556,7 +556,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_51 EXP_488
 Watson HP_370 EXP_57
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 9 - TURN : 5
@@ -570,7 +570,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_51 EXP_488
 Watson HP_370 EXP_57
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 10 - TURN : 0
@@ -584,7 +584,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_51 EXP_488
 Watson HP_370 EXP_57
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 10 - TURN : 1
@@ -598,7 +598,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_44 EXP_415
 Watson HP_370 EXP_57
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 10 - TURN : 2
@@ -612,7 +612,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_44 EXP_415
 Watson HP_370 EXP_57
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 10 - TURN : 3
@@ -626,7 +626,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_44 EXP_415
 Watson HP_370 EXP_57
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 10 - TURN : 4
@@ -640,7 +640,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_44 EXP_415
 Watson HP_370 EXP_57
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 10 - TURN : 5
@@ -654,7 +654,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_44 EXP_415
 Watson HP_315 EXP_49
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 11 - TURN : 0
@@ -668,7 +668,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_44 EXP_415
 Watson HP_315 EXP_49
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 11 - TURN : 1
@@ -682,7 +682,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_44 EXP_415
 Watson HP_315 EXP_49
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 11 - TURN : 2
@@ -696,7 +696,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_44 EXP_415
 Watson HP_268 EXP_42
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 11 - TURN : 3
@@ -710,7 +710,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_44 EXP_415
 Watson HP_268 EXP_42
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 11 - TURN : 4
@@ -724,7 +724,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_44 EXP_415
 Watson HP_268 EXP_42
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 11 - TURN : 5
@@ -738,7 +738,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_38 EXP_353
 Watson HP_268 EXP_42
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 12 - TURN : 0
@@ -752,7 +752,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_38 EXP_353
 Watson HP_268 EXP_42
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 12 - TURN : 1
@@ -766,7 +766,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_33 EXP_301
 Watson HP_268 EXP_42
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 12 - TURN : 2
@@ -780,7 +780,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_33 EXP_301
 Watson HP_268 EXP_42
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 12 - TURN : 3
@@ -794,7 +794,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_33 EXP_301
 Watson HP_268 EXP_42
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 12 - TURN : 4
@@ -808,7 +808,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_33 EXP_301
 Watson HP_268 EXP_42
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 12 - TURN : 5
@@ -822,7 +822,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_33 EXP_301
 Watson HP_228 EXP_36
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 13 - TURN : 0
@@ -836,7 +836,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_33 EXP_301
 Watson HP_228 EXP_36
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 13 - TURN : 1
@@ -850,7 +850,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_29 EXP_256
 Watson HP_228 EXP_36
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 13 - TURN : 2
@@ -864,7 +864,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_29 EXP_256
 Watson HP_194 EXP_31
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 13 - TURN : 3
@@ -878,7 +878,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_29 EXP_256
 Watson HP_194 EXP_31
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 13 - TURN : 4
@@ -892,7 +892,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_29 EXP_256
 Watson HP_194 EXP_31
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 13 - TURN : 5
@@ -906,7 +906,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_29 EXP_256
 Watson HP_194 EXP_31
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 14 - TURN : 0
@@ -920,7 +920,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_29 EXP_256
 Watson HP_194 EXP_31
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 14 - TURN : 1
@@ -934,7 +934,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_29 EXP_256
 Watson HP_194 EXP_31
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 14 - TURN : 2
@@ -948,7 +948,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_29 EXP_256
 Watson HP_194 EXP_31
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 14 - TURN : 3
@@ -962,7 +962,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_29 EXP_256
 Watson HP_194 EXP_31
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 14 - TURN : 4
@@ -976,7 +976,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_25 EXP_218
 Watson HP_194 EXP_31
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 14 - TURN : 5
@@ -990,7 +990,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_25 EXP_218
 Watson HP_194 EXP_31
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 15 - TURN : 0
@@ -1004,7 +1004,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_25 EXP_218
 Watson HP_194 EXP_31
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 15 - TURN : 1
@@ -1018,7 +1018,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_22 EXP_186
 Watson HP_194 EXP_31
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 15 - TURN : 2
@@ -1032,7 +1032,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_22 EXP_186
 Watson HP_194 EXP_31
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 15 - TURN : 3
@@ -1046,7 +1046,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_22 EXP_186
 Watson HP_194 EXP_31
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 15 - TURN : 4
@@ -1060,7 +1060,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_22 EXP_186
 Watson HP_194 EXP_31
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 15 - TURN : 5
@@ -1074,7 +1074,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_22 EXP_186
 Watson HP_165 EXP_27
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 16 - TURN : 0
@@ -1088,7 +1088,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_22 EXP_186
 Watson HP_165 EXP_27
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 16 - TURN : 1
@@ -1102,7 +1102,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_22 EXP_186
 Watson HP_165 EXP_27
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 16 - TURN : 2
@@ -1116,7 +1116,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_22 EXP_186
 Watson HP_141 EXP_23
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 16 - TURN : 3
@@ -1130,7 +1130,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_22 EXP_186
 Watson HP_141 EXP_23
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 16 - TURN : 4
@@ -1144,7 +1144,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_22 EXP_186
 Watson HP_141 EXP_23
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 16 - TURN : 5
@@ -1158,7 +1158,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_19 EXP_159
 Watson HP_141 EXP_23
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 17 - TURN : 0
@@ -1172,7 +1172,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_19 EXP_159
 Watson HP_141 EXP_23
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 17 - TURN : 1
@@ -1186,7 +1186,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_17 EXP_136
 Watson HP_141 EXP_23
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 17 - TURN : 2
@@ -1200,7 +1200,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_17 EXP_136
 Watson HP_141 EXP_23
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 17 - TURN : 3
@@ -1214,7 +1214,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_17 EXP_136
 Watson HP_141 EXP_23
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 17 - TURN : 4
@@ -1228,7 +1228,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_17 EXP_136
 Watson HP_141 EXP_23
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 17 - TURN : 5
@@ -1242,7 +1242,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_17 EXP_136
 Watson HP_120 EXP_20
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 18 - TURN : 0
@@ -1256,7 +1256,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_17 EXP_136
 Watson HP_120 EXP_20
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 18 - TURN : 1
@@ -1270,7 +1270,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_17 EXP_136
 Watson HP_120 EXP_20
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 18 - TURN : 2
@@ -1284,7 +1284,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_17 EXP_136
 Watson HP_102 EXP_17
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 18 - TURN : 3
@@ -1298,7 +1298,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_17 EXP_136
 Watson HP_102 EXP_17
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 18 - TURN : 4
@@ -1312,7 +1312,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_15 EXP_116
 Watson HP_102 EXP_17
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 18 - TURN : 5
@@ -1326,7 +1326,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_15 EXP_116
 Watson HP_102 EXP_17
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 19 - TURN : 0
@@ -1340,7 +1340,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_15 EXP_116
 Watson HP_102 EXP_17
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 19 - TURN : 1
@@ -1354,7 +1354,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_13 EXP_99
 Watson HP_102 EXP_17
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 19 - TURN : 2
@@ -1368,7 +1368,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_13 EXP_99
 Watson HP_102 EXP_17
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 19 - TURN : 3
@@ -1382,7 +1382,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_13 EXP_99
 Watson HP_102 EXP_17
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 19 - TURN : 4
@@ -1396,7 +1396,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_13 EXP_99
 Watson HP_102 EXP_17
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 19 - TURN : 5
@@ -1410,4 +1410,4 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_13 EXP_99
 Watson HP_102 EXP_17
 SherlockBag : Bag[count=0;]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]

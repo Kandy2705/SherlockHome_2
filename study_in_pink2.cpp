@@ -1325,7 +1325,7 @@ void StudyPinkProgram::run(bool verbose, ofstream &OUTPUT)
                     << "ROUND : " << istep << " - TURN : " << i << endl;
 
 
-            if (istep == 13 && i == 2){
+            if (istep == 9 && i == 3){
                 string tempp;
             }
             arr_mv_objs->get(i)->move();
@@ -1923,7 +1923,6 @@ bool ArrayMovingObject::checkMeet(int index)
                             sherlock->setPos(criminal->getCurrentPosition());
                             return true;
                         }
-                        return false;
                     }
                     else{
                         if (robot->getType() == W){
@@ -1959,7 +1958,6 @@ bool ArrayMovingObject::checkMeet(int index)
             }
         }
     }
-
     return false;
 }
 // *CLASS: Sherlock
@@ -2254,17 +2252,18 @@ bool Watson::meet(RobotS *robotS)
 bool Watson::meet(RobotW *robotW)
 {
     // TODO: Xử lý trao đổi khi gặp robot W
-    bool dungchua = false;
-    BaseItem* vatphamsudung = this->bag->find(PASSING_CARD);
-    if (vatphamsudung != nullptr){
-        if (vatphamsudung->canUse(this, robotW)){
-            vatphamsudung = this->bag->get(PASSING_CARD);
-            vatphamsudung->use(this, robotW);
-            dungchua = true;
-        } else dungchua = false;
-    }
+
 
     if (this->hp > 350){
+        bool dungchua = false;
+        BaseItem* vatphamsudung = this->bag->find(PASSING_CARD);
+        if (vatphamsudung != nullptr){
+            if (vatphamsudung->canUse(this, robotW)){
+                vatphamsudung = this->bag->get(PASSING_CARD);
+                vatphamsudung->use(this, robotW);
+                dungchua = true;
+            } else dungchua = false;
+        }
         BaseItem * newItem;
         if (robotW->getItem()->getType() == MAGIC_BOOK){
             newItem = new MagicBook();
@@ -2292,6 +2291,35 @@ bool Watson::meet(RobotW *robotW)
         return true;
     }
     else{
+        bool dungchua = false;
+        BaseItem* vatphamsudung = this->bag->find(PASSING_CARD);
+        if (vatphamsudung != nullptr){
+            if (vatphamsudung->canUse(this, robotW)){
+                vatphamsudung = this->bag->get(PASSING_CARD);
+                vatphamsudung->use(this, robotW);
+                dungchua = true;
+            } else dungchua = false;
+        }
+        if (dungchua == true){
+            BaseItem * newItem;
+            if (robotW->getItem()->getType() == MAGIC_BOOK){
+                newItem = new MagicBook();
+            }
+            else if (robotW->getItem()->getType() == ENERGY_DRINK){
+                newItem = new EnergyDrink();
+            }
+            else if (robotW->getItem()->getType() == FIRST_AID){
+                newItem = new FirstAid();
+            }
+            else if (robotW->getItem()->getType() == EXCEMPTION_CARD){
+                newItem = new ExcemptionCard();
+            }
+            else{
+                newItem = new PassingCard(robotW->getPoshead().getRow(), robotW->getPoshead().getCol());
+            }
+
+            this->bag->insert(newItem);
+        }
         if (dungchua == false) hp = ceil(hp * 0.95);
         vatphamsudung = this->bag->get();
 
@@ -2306,16 +2334,17 @@ bool Watson::meet(RobotW *robotW)
 bool Watson::meet(RobotSW *robotSW)
 {
     // TODO: Xử lý trao đổi khi gặp robot SW
-    bool dungchua = false;
-    BaseItem* vatphamsudung = this->bag->find(PASSING_CARD);
-    if (vatphamsudung != nullptr){
-        if (vatphamsudung->canUse(this, robotSW)){
-            vatphamsudung = this->bag->get(PASSING_CARD);
-            vatphamsudung->use(this, robotSW);
-            dungchua = true;
-        } else dungchua = false;
-    }
+
     if (this->exp > 600 && this->hp > 165){
+        bool dungchua = false;
+        BaseItem* vatphamsudung = this->bag->find(PASSING_CARD);
+        if (vatphamsudung != nullptr){
+            if (vatphamsudung->canUse(this, robotSW)){
+                vatphamsudung = this->bag->get(PASSING_CARD);
+                vatphamsudung->use(this, robotSW);
+                dungchua = true;
+            } else dungchua = false;
+        }
         BaseItem * newItem;
         if (robotSW->getItem()->getType() == MAGIC_BOOK){
             newItem = new MagicBook();
@@ -2343,6 +2372,35 @@ bool Watson::meet(RobotSW *robotSW)
         return true;
     }
     else{
+        bool dungchua = false;
+        BaseItem* vatphamsudung = this->bag->find(PASSING_CARD);
+        if (vatphamsudung != nullptr){
+            if (vatphamsudung->canUse(this, robotSW)){
+                vatphamsudung = this->bag->get(PASSING_CARD);
+                vatphamsudung->use(this, robotSW);
+                dungchua = true;
+            } else dungchua = false;
+        }
+        if (dungchua == true){
+            BaseItem * newItem;
+            if (robotSW->getItem()->getType() == MAGIC_BOOK){
+                newItem = new MagicBook();
+            }
+            else if (robotSW->getItem()->getType() == ENERGY_DRINK){
+                newItem = new EnergyDrink();
+            }
+            else if (robotSW->getItem()->getType() == FIRST_AID){
+                newItem = new FirstAid();
+            }
+            else if (robotSW->getItem()->getType() == EXCEMPTION_CARD){
+                newItem = new ExcemptionCard();
+            }
+            else{
+                newItem = new PassingCard(robotSW->getPoshead().getRow(), robotSW->getPoshead().getCol());
+            }
+
+            this->bag->insert(newItem);
+        }
         if (dungchua == false){
             hp = ceil(hp * 0.85);
             exp = ceil(exp * 0.85);

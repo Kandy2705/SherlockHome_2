@@ -738,7 +738,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_338 EXP_734
 Watson HP_144 EXP_777
 SherlockBag : Bag[count=6;MagicBook,MagicBook,MagicBook,MagicBook,MagicBook,MagicBook]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 12 - TURN : 0
@@ -752,7 +752,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_338 EXP_734
 Watson HP_144 EXP_777
 SherlockBag : Bag[count=6;MagicBook,MagicBook,MagicBook,MagicBook,MagicBook,MagicBook]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 12 - TURN : 1
@@ -766,7 +766,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_338 EXP_734
 Watson HP_144 EXP_777
 SherlockBag : Bag[count=7;MagicBook,MagicBook,MagicBook,MagicBook,MagicBook,MagicBook,MagicBook]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 12 - TURN : 2
@@ -780,7 +780,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_338 EXP_734
 Watson HP_137 EXP_777
 SherlockBag : Bag[count=7;MagicBook,MagicBook,MagicBook,MagicBook,MagicBook,MagicBook,MagicBook]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 12 - TURN : 3
@@ -794,7 +794,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_338 EXP_734
 Watson HP_137 EXP_777
 SherlockBag : Bag[count=7;MagicBook,MagicBook,MagicBook,MagicBook,MagicBook,MagicBook,MagicBook]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 12 - TURN : 4
@@ -808,7 +808,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_338 EXP_734
 Watson HP_137 EXP_777
 SherlockBag : Bag[count=7;MagicBook,MagicBook,MagicBook,MagicBook,MagicBook,MagicBook,MagicBook]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 12 - TURN : 5
@@ -822,7 +822,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_338 EXP_734
 Watson HP_137 EXP_777
 SherlockBag : Bag[count=7;MagicBook,MagicBook,MagicBook,MagicBook,MagicBook,MagicBook,MagicBook]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 13 - TURN : 0
@@ -836,7 +836,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_338 EXP_734
 Watson HP_137 EXP_777
 SherlockBag : Bag[count=7;MagicBook,MagicBook,MagicBook,MagicBook,MagicBook,MagicBook,MagicBook]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 13 - TURN : 1
@@ -850,7 +850,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_338 EXP_734
 Watson HP_137 EXP_777
 SherlockBag : Bag[count=7;MagicBook,MagicBook,MagicBook,MagicBook,MagicBook,MagicBook,MagicBook]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 13 - TURN : 2
@@ -864,7 +864,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_338 EXP_734
 Watson HP_137 EXP_777
 SherlockBag : Bag[count=7;MagicBook,MagicBook,MagicBook,MagicBook,MagicBook,MagicBook,MagicBook]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 13 - TURN : 3
@@ -878,7 +878,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_338 EXP_734
 Watson HP_137 EXP_777
 SherlockBag : Bag[count=7;MagicBook,MagicBook,MagicBook,MagicBook,MagicBook,MagicBook,MagicBook]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 13 - TURN : 4
@@ -892,7 +892,7 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_338 EXP_734
 Watson HP_137 EXP_777
 SherlockBag : Bag[count=7;MagicBook,MagicBook,MagicBook,MagicBook,MagicBook,MagicBook,MagicBook]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]
 
 *************AFTER MOVE*************
 ROUND : 13 - TURN : 5
@@ -906,4 +906,4 @@ ArrayMovingObject[count=6;capacity=6;]
 Sherlock HP_338 EXP_734
 Watson HP_131 EXP_777
 SherlockBag : Bag[count=7;MagicBook,MagicBook,MagicBook,MagicBook,MagicBook,MagicBook,MagicBook]
-WatsonBag : Bag[count=0;]
+WatsonBag : Bag[count=1;EnergyDrink]

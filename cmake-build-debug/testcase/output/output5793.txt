@@ -1212,7 +1212,7 @@ ArrayMovingObject[count=6;capacity=6;]
 	Robot[pos=(0,1);type=SW;dist=4]
 	Robot[pos=(0,1);type=W;dist=2]
 Sherlock HP_57 EXP_357
-Watson HP_64 EXP_5
+Watson HP_64 EXP_7
 SherlockBag : Bag[count=5;MagicBook,MagicBook,MagicBook,MagicBook,MagicBook]
 WatsonBag : Bag[count=0;]
 
@@ -1226,7 +1226,7 @@ ArrayMovingObject[count=6;capacity=6;]
 	Robot[pos=(1,0);type=SW;dist=0]
 	Robot[pos=(0,1);type=W;dist=2]
 Sherlock HP_49 EXP_380
-Watson HP_55 EXP_5
+Watson HP_55 EXP_6
 SherlockBag : Bag[count=4;MagicBook,MagicBook,MagicBook,MagicBook]
 WatsonBag : Bag[count=0;]
 
@@ -1240,6 +1240,6 @@ ArrayMovingObject[count=6;capacity=6;]
 	Robot[pos=(1,0);type=SW;dist=0]
 	Robot[pos=(1,1);type=W;dist=1]
 Sherlock HP_49 EXP_380
-Watson HP_55 EXP_5
+Watson HP_55 EXP_6
 SherlockBag : Bag[count=4;MagicBook,MagicBook,MagicBook,MagicBook]
 WatsonBag : Bag[count=0;]

@@ -540,7 +540,7 @@ ArrayMovingObject[count=6;capacity=8;]
 	Robot[pos=(3,1);type=SW;dist=0]
 	Robot[pos=(2,1);type=SW;dist=2]
 Sherlock HP_264 EXP_45
-Watson HP_6 EXP_456
+Watson HP_9 EXP_456
 SherlockBag : Bag[count=0;]
 WatsonBag : Bag[count=0;]
 
@@ -554,7 +554,7 @@ ArrayMovingObject[count=6;capacity=8;]
 	Robot[pos=(1,1);type=SW;dist=4]
 	Robot[pos=(2,1);type=SW;dist=2]
 Sherlock HP_264 EXP_45
-Watson HP_6 EXP_456
+Watson HP_9 EXP_456
 SherlockBag : Bag[count=0;]
 WatsonBag : Bag[count=0;]
 
@@ -568,7 +568,7 @@ ArrayMovingObject[count=6;capacity=8;]
 	Robot[pos=(1,1);type=SW;dist=4]
 	Robot[pos=(4,1);type=SW;dist=2]
 Sherlock HP_264 EXP_45
-Watson HP_6 EXP_456
+Watson HP_9 EXP_456
 SherlockBag : Bag[count=0;]
 WatsonBag : Bag[count=0;]
 
@@ -582,7 +582,7 @@ ArrayMovingObject[count=6;capacity=8;]
 	Robot[pos=(1,1);type=SW;dist=4]
 	Robot[pos=(4,1);type=SW;dist=2]
 Sherlock HP_264 EXP_45
-Watson HP_6 EXP_456
+Watson HP_9 EXP_456
 SherlockBag : Bag[count=0;]
 WatsonBag : Bag[count=0;]
 
@@ -596,7 +596,7 @@ ArrayMovingObject[count=6;capacity=8;]
 	Robot[pos=(1,1);type=SW;dist=3]
 	Robot[pos=(4,1);type=SW;dist=3]
 Sherlock HP_264 EXP_45
-Watson HP_6 EXP_456
+Watson HP_9 EXP_456
 SherlockBag : Bag[count=0;]
 WatsonBag : Bag[count=0;]
 
@@ -610,7 +610,7 @@ ArrayMovingObject[count=6;capacity=8;]
 	Robot[pos=(1,1);type=SW;dist=2]
 	Robot[pos=(4,1);type=SW;dist=4]
 Sherlock HP_264 EXP_45
-Watson HP_6 EXP_456
+Watson HP_9 EXP_456
 SherlockBag : Bag[count=0;]
 WatsonBag : Bag[count=0;]
 
@@ -624,7 +624,7 @@ ArrayMovingObject[count=6;capacity=8;]
 	Robot[pos=(1,1);type=SW;dist=2]
 	Robot[pos=(4,1);type=SW;dist=4]
 Sherlock HP_264 EXP_45
-Watson HP_6 EXP_456
+Watson HP_9 EXP_456
 SherlockBag : Bag[count=0;]
 WatsonBag : Bag[count=0;]
 
@@ -638,7 +638,7 @@ ArrayMovingObject[count=6;capacity=8;]
 	Robot[pos=(3,1);type=SW;dist=2]
 	Robot[pos=(4,1);type=SW;dist=4]
 Sherlock HP_264 EXP_45
-Watson HP_6 EXP_456
+Watson HP_9 EXP_456
 SherlockBag : Bag[count=0;]
 WatsonBag : Bag[count=0;]
 
@@ -652,7 +652,7 @@ ArrayMovingObject[count=6;capacity=8;]
 	Robot[pos=(3,1);type=SW;dist=2]
 	Robot[pos=(2,1);type=SW;dist=0]
 Sherlock HP_225 EXP_39
-Watson HP_6 EXP_388
+Watson HP_8 EXP_388
 SherlockBag : Bag[count=0;]
 WatsonBag : Bag[count=0;]
 
@@ -667,7 +667,7 @@ ArrayMovingObject[count=7;capacity=8;]
 	Robot[pos=(2,1);type=SW;dist=0]
 	Robot[pos=(4,0);type=SW;dist=6]
 Sherlock HP_225 EXP_39
-Watson HP_6 EXP_388
+Watson HP_8 EXP_388
 SherlockBag : Bag[count=0;]
 WatsonBag : Bag[count=0;]
 
@@ -682,7 +682,7 @@ ArrayMovingObject[count=7;capacity=8;]
 	Robot[pos=(2,1);type=SW;dist=1]
 	Robot[pos=(4,0);type=SW;dist=5]
 Sherlock HP_192 EXP_34
-Watson HP_6 EXP_388
+Watson HP_8 EXP_388
 SherlockBag : Bag[count=0;]
 WatsonBag : Bag[count=0;]
 
@@ -697,7 +697,7 @@ ArrayMovingObject[count=7;capacity=8;]
 	Robot[pos=(2,1);type=SW;dist=2]
 	Robot[pos=(4,0);type=SW;dist=4]
 Sherlock HP_192 EXP_34
-Watson HP_6 EXP_388
+Watson HP_8 EXP_388
 SherlockBag : Bag[count=0;]
 WatsonBag : Bag[count=0;]
 
@@ -712,7 +712,7 @@ ArrayMovingObject[count=7;capacity=8;]
 	Robot[pos=(2,1);type=SW;dist=2]
 	Robot[pos=(4,0);type=SW;dist=4]
 Sherlock HP_192 EXP_34
-Watson HP_6 EXP_388
+Watson HP_8 EXP_388
 SherlockBag : Bag[count=0;]
 WatsonBag : Bag[count=0;]
 
@@ -727,7 +727,7 @@ ArrayMovingObject[count=7;capacity=8;]
 	Robot[pos=(2,1);type=SW;dist=2]
 	Robot[pos=(4,0);type=SW;dist=4]
 Sherlock HP_192 EXP_34
-Watson HP_6 EXP_330
+Watson HP_7 EXP_330
 SherlockBag : Bag[count=0;]
 WatsonBag : Bag[count=0;]
 
@@ -742,7 +742,7 @@ ArrayMovingObject[count=7;capacity=8;]
 	Robot[pos=(3,0);type=SW;dist=2]
 	Robot[pos=(4,0);type=SW;dist=4]
 Sherlock HP_192 EXP_34
-Watson HP_6 EXP_330
+Watson HP_7 EXP_330
 SherlockBag : Bag[count=0;]
 WatsonBag : Bag[count=0;]
 
