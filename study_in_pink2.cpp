@@ -1,14 +1,3 @@
-// TODO:
-// Chỉnh lại di chuyển của RobotC (gợi ý: thực hiện hàm getPrevPosition cho Criminal)
-// Mô tả về các meet thay đổi (đã được confirm 90%)
-// File study_in_pink2.h những phần trước "addition" là gốc của đề (không thay đổi)
-// Chỉnh tên thuộc tính hp và exp của Sherlock và Watson
-// Position có nạp chồng 2 hàm isEqual
-// isStop kiểm tra vị trí Sherlock, Watson với Criminal và hp của Sherlock, Watson
-// Hàm run chú ý chỉnh từ hàm run() gốc (vị trí gọi printResult và printStep)
-// Hàm move của Sherlock và Watson khi exp == 0 sẽ không thực hiện gì
-// NOTE:
-// chú ý các phần addition nên sửa đổi để tránh đạo code
 // nộp Bkel cần xóa đổi lại 2 hàm printResult và printStep gốc, xóa thuộc tính outputFile
 #include "study_in_pink2.h"
 
@@ -19,7 +8,6 @@ const Position Position::npos = Position(-1, -1);
 
 MapElement::MapElement(ElementType in_type): type(in_type)
 {
-    // TODO: constructor
 
 }
 
@@ -27,7 +15,6 @@ MapElement::~MapElement() {}
 
 ElementType MapElement::getType() const
 {
-    // TODO: get
     return type;
 }
 /*
@@ -46,11 +33,9 @@ Wall::Wall()
 FakeWall::FakeWall(int in_req_exp)
         : MapElement(ElementType::FAKE_WALL), req_exp(in_req_exp)
 {
-    // TODO: constructor
 }
 int FakeWall::getReqExp() const
 {
-    // TODO: get
     return req_exp;
 }
 /*
@@ -59,43 +44,35 @@ int FakeWall::getReqExp() const
 
 Position::Position(int r, int c ) :r(r),c(c)
 {
-    // TODO: constructor
 }
 Position::Position(const string &str_pos)
 {
-    // TODO: constructor
     r = stoi(str_pos.substr(str_pos.find("(") + 1, str_pos.find(",")));
     c = stoi(str_pos.substr(str_pos.find(",") + 1, str_pos.find(")")));
 }
 int Position::getRow() const
 {
-    // TODO: get
     return r;
 }
 int Position::getCol() const
 {
-    // TODO: get
     return c;
 }
 void Position::setRow(int r)
 {
-    // TODO: set
     this -> r = r;
 }
 void Position::setCol(int c)
 {
-    // TODO: set
     this -> c = c;
 }
 string Position::str() const
 {
-    // TODO: trả về chuỗi "(<r>,<c>)"
     string tra = "(" + to_string(r)+ "," + to_string(c) + ")";
     return tra;
 }
 bool Position::isEqual(Position position) const
 {
-    // TODO: so sánh tọa độ với Position khác
     if (position.r == r && position.c == c){
         return true;
     }
@@ -114,16 +91,13 @@ bool Position ::isEqual(int in_r, int in_c) const {
  */
 MovingObject::MovingObject(int index, const Position pos, Map *map, const string &name ):index(index),pos(pos),map(map),name(name)
 {
-    // TODO: constructor
 }
 
 MovingObject::~MovingObject(){
-//    map = nullptr;
 }
 
 Position MovingObject::getCurrentPosition() const
 {
-    // TODO: get
     return Position(pos.getRow(),pos.getCol());
 
 }
@@ -132,10 +106,10 @@ Position MovingObject::getCurrentPosition() const
  */
 Character::Character(int index, const Position pos, Map *map, const string &name)
         : MovingObject(index,pos,map,name
-        // TODO: constructor class chapo
+
 )
 {
-    // TODO: constructor
+
 }
 /*
  * CLASS: Robot kế thừa class MovingObject
@@ -143,7 +117,6 @@ Character::Character(int index, const Position pos, Map *map, const string &name
 Robot::Robot(int index, const Position &pos, Map *map, Criminal *criminal, const string &name)
         : MovingObject(index, pos, map, "Robot"), criminal(criminal) //! khác
 {
-    // TODO: tính toán loại item
     this->criminal = criminal;
     int p = pos.getRow()*pos.getCol();
     int s = 0;
@@ -181,7 +154,6 @@ RobotType Robot::getType() {
 Sherlock::Sherlock(int index, const string &moving_rule, const Position &init_pos, Map *map, int init_hp, int init_exp)
         : Character(index, init_pos, map, "Sherlock"), moving_rule(moving_rule), hp(init_hp), exp(init_exp), index_moving_rule(0)
 {
-    // TODO: thêm thuộc tính bag
     index_moving_rule = 0;
     if (init_hp < 0){
         hp = 0;
@@ -238,7 +210,6 @@ Position Sherlock::getNextPosition()
         return Position::npos;
     }
 
-    //SỬA
     if (!map ->isValid(Position(vitrir,vitric),this)){//nếu không tìm thấy trên map
         return Position::npos;
     }
@@ -257,7 +228,6 @@ void Sherlock::move()
 }
 string Sherlock::str() const
 {
-    //  TODO: trả về chuỗi "Sherlock[index=<index>;pos=<pos>;moving_rule=<moving_rule>]"
     string ketqua = "Sherlock[index="+ to_string(index) +";pos="+pos.str()+";moving_rule=" + moving_rule+"]";
     return ketqua;
 }
@@ -290,7 +260,6 @@ void Sherlock::setEXP(int exp)
 Watson::Watson(int index, const string &moving_rule, const Position &init_pos, Map *map, int init_hp, int init_exp)
         : Character(index, init_pos, map, "Watson"), moving_rule(moving_rule), hp(init_hp), exp(init_exp), index_moving_rule(0)
 {
-    // TODO: thêm thuộc tính bag
     index_moving_rule = 0;
     if (init_hp < 0){
         hp = 0;
@@ -342,7 +311,6 @@ Position Watson::getNextPosition()
     else{
         return Position::npos;
     }
-    //Sửa
     if (!map ->isValid(Position(vitrir,vitric),this)){//nếu không tìm thấy trên map
         return Position::npos;
     }
@@ -364,7 +332,6 @@ void Watson::move()
 }
 string Watson::str() const
 {
-    //  TODO: trả về chuỗi "Watson[index=<index>;pos=<pos>;moving_rule=<moving_rule>]"
     string ketqua = "Watson[index="+ to_string(index) +";pos="+pos.str()+";moving_rule=" + moving_rule+"]";
     return ketqua;
 }
@@ -399,13 +366,10 @@ void Watson::setEXP(int exp)
 Map::Map(int num_rows, int num_cols, int num_walls, Position *array_walls, int num_fake_walls, Position *array_fake_walls)
 {
 
-    //Sửa
     this->num_rows = num_rows;
     this->num_cols = num_cols;
-    //Sửa
 
     map = new MapElement**[num_rows];
-    // tạo map với giá trị null
     for(int i = 0; i < num_rows; i++){
         map[i] = new MapElement*[num_cols];
         for (int j = 0; j < num_cols; j++){
@@ -466,7 +430,6 @@ int Map::getNumCols() const
 }
 ElementType Map::getElementType(int i, int j) const
 {
-    // TODO: get
     return map[i][j] -> getType();
 }
 bool Map::isValid(const Position pos, MovingObject *mv_obj) const
@@ -501,7 +464,6 @@ bool Map::isValid(const Position pos, MovingObject *mv_obj) const
 Criminal::Criminal(int index, const Position &init_pos, Map *map, Sherlock *sherlock, Watson *watson)
         : Character(index,init_pos,map,"Criminal"), sherlock(sherlock), watson(watson)
 {
-    // TODO: constructor
     count = 0;
 }
 
@@ -516,9 +478,7 @@ int Sum(int x, int y, Sherlock*s, Watson*w){
 }
 Position Criminal::getNextPosition()
 {
-    // TODO: tính vị trí tiếp theo dựa theo nước đi kế tiếp
 
-    //SỬA
     int vitric = -1;
     int vitrir = -1;
     int sum = -1;
@@ -570,7 +530,6 @@ Position Criminal::getPrevPosition() const{
 }
 void Criminal::move()
 {
-    // TODO: di chuyển đến vị trí tiếp theo và cập nhật nước đi tiếp theo
     Position vitritiep = getNextPosition();
     if (vitritiep == Position::npos){
         return;
@@ -582,7 +541,6 @@ void Criminal::move()
 
 string Criminal::str() const
 {
-    // TODO: trả về chuỗi "Watson[index=<index>;pos=<pos>]"
     string ketqua = "Criminal[index="+ to_string(index) +";pos="+pos.str()+"]";
     return ketqua;
 }
@@ -608,7 +566,6 @@ int kcW(int x, int y, Watson*w){
 }
 Robot *Robot::create(int index, Map *map, Criminal *criminal, Sherlock *sherlock, Watson *watson)
 {
-    // TODO: trả về đối tượng class kế thừa từ Robot phù hợp
     Position cr = criminal->getPrevPosition();
     Position she = sherlock->getCurrentPosition();
     Position wa = watson->getCurrentPosition();
@@ -640,7 +597,6 @@ MovingObjectType Robot::getObjectType() const
 RobotC::RobotC(int index, const Position &init_pos, Map *map, Criminal *criminal)
         : Robot(index,init_pos, map, criminal,"RobotC")
 {
-    // TODO: constructor
     this->robot_type = C;
 }
 
@@ -654,10 +610,8 @@ int RobotC::getDistance(Watson *watson)
     int distance_watson = criminal->manhattanDistance(pos, watson->getCurrentPosition());
     return distance_watson;
 }
-// TODO implement các phương thức getNextPosition, move, str, getType, getDistance
 Position RobotC::getNextPosition()
 {
-    // TODO: tìm vị trí liền sau của Criminal
     Position nextP = criminal->getPrevPosition();//getNextPosition();//getCurrentPosition();
     int vitrir=nextP.getRow();
     int vitric=nextP.getCol();
@@ -665,7 +619,6 @@ Position RobotC::getNextPosition()
 }
 void RobotC::move()
 {
-    // TODO: di chuyển theo Criminal
     Position vitritiep = getNextPosition();
     if (vitritiep == Position::npos){
         return;
@@ -680,7 +633,6 @@ string RobotC::str() const
 }
 int RobotC::getDistance() const
 {
-    // TODO: get
     //Sherlock*sherlock;
     //Watson*watson;
     int distance_sherlock = criminal->manhattanDistance(pos, criminal->getSherlock()->getCurrentPosition());
@@ -698,30 +650,24 @@ RobotType RobotC::getType() const
 RobotW::RobotW(int index, const Position &init_pos, Map *map, Criminal *criminal, Watson *watson)
         : Robot(index,init_pos, map, criminal,"RobotW")
 {
-    // TODO: constructor
     this->robot_type = W;
     this->watson = watson;
 }
 
 Position RobotW::getNextPosition()
 {
-    // TODO: tìm vị trí tiếp theo gần Watson nhất
     int vitrir = pos.getRow();
     int vitric = pos.getCol();
 
-    //SỬA
 
 //    Sherlock*sherlock;
 //    Watson*watson;
-
-    //SỬA
 
     int ketquacuoicungr = -1;
     int ketquacuoicungc = -1;
 
     int kc=999999; //khoi tao
 
-    //SỬA
     if(map->isValid(Position(vitrir - 1, vitric), this) && kcW(vitric, vitrir - 1,watson) < kc){ //len
         ketquacuoicungr = vitrir - 1;
         ketquacuoicungc = vitric;
@@ -743,7 +689,6 @@ Position RobotW::getNextPosition()
         kc = kcW(vitric - 1, vitrir,watson);
     }
 
-    //SỬA
     return Position(ketquacuoicungr,ketquacuoicungc);
 }
 
@@ -770,7 +715,6 @@ RobotType RobotW::getType() const
 
 int RobotW::getDistance() const
 {
-    // TODO: get
     //Watson*watson;
     int distance_watson = criminal->manhattanDistance(pos, criminal->getWatson()->getCurrentPosition());
     return distance_watson;
@@ -781,17 +725,14 @@ int RobotW::getDistance() const
 RobotS::RobotS(int index, const Position &init_pos, Map *map, Criminal *criminal, Sherlock *sherlock)
         : Robot(index,init_pos, map, criminal,"RobotS")
 {
-    // TODO: constructor
     this->robot_type = S;
     this->sherlock = sherlock;
 }
 
 Position RobotS::getNextPosition()
 {
-    // TODO: tìm vị trí tiếp theo gần Sherlock nhất
     int vitrir = pos.getRow();
     int vitric = pos.getCol();
-    //SỬA
 
     int ketquacuoicungr = -1;
     int ketquacuoicungc = -1;
@@ -820,12 +761,10 @@ Position RobotS::getNextPosition()
         kc = kcS(vitric - 1, vitrir,sherlock);
     }
 
-    //SỬA
     return Position(ketquacuoicungr,ketquacuoicungc);
 }
 void RobotS::move()
 {
-    // TODO: di chuyển về phía Sherlock
     Position vitritiep = getNextPosition();
     if (vitritiep == Position::npos){
         return;
@@ -836,7 +775,6 @@ void RobotS::move()
 
 string RobotS::str() const
 {
-    // TODO: trả về chuỗi "RobotS[pos=<pos>;type=S;dist=<distance>]"
     string ketqua ="Robot[pos=" + pos.str() + ";type=S;dist=" + to_string(getDistance()) +"]" ;
     return ketqua;
 }
@@ -848,7 +786,6 @@ RobotType RobotS::getType() const
 
 int RobotS::getDistance() const
 {
-    // TODO: get
     Sherlock*sherlock;
     int distance_sherlock = criminal->manhattanDistance(pos, criminal->getSherlock()->getCurrentPosition());
     return distance_sherlock;
@@ -859,20 +796,15 @@ int RobotS::getDistance() const
 RobotSW::RobotSW(int index, const Position &init_pos, Map *map, Criminal *criminal, Sherlock *sherlock, Watson *watson)
         : Robot(index,init_pos, map, criminal,"RobotSW")
 {
-    // TODO: constructor
     this->robot_type = SW;
     this->sherlock = sherlock;
     this->watson = watson;
 }
 
-// TODO implement các phương thức getNextPosition, move, str, getType, getDistance
 Position RobotSW::getNextPosition()
 {
-    // TODO: tìm vị trí tổng giá trị khoảng cách Sherlock và Watson nhỏ nhất
     int vitric = pos.getCol();
     int vitrir = pos.getRow();
-
-    //SỬA
 
     int ketquacuoicungr = -1;
     int ketquacuoicungc = -1;
@@ -935,7 +867,6 @@ Position RobotSW::getNextPosition()
 }
 string RobotSW::str() const
 {
-    // TODO: trả về chuỗi "RobotS[pos=<pos>;type=S;dist=<distance>]"
     string ketqua ="Robot[pos=" + pos.str() + ";type=SW;dist=" + to_string(getDistance()) + "]" ;
     return ketqua;
 }
@@ -945,7 +876,6 @@ RobotType RobotSW::getType() const
 }
 int RobotSW::getDistance() const
 {
-    // TODO: get tổng khoảng cách đến Sherlock và Watson
 //    Sherlock*sherlock;
 //    Watson*watson;
     int distance_sherlock = criminal->manhattanDistance(pos, criminal->getSherlock()->getCurrentPosition());
@@ -954,7 +884,6 @@ int RobotSW::getDistance() const
 }
 void RobotSW::move()
 {
-    // TODO: di chuyển đến gần cả Sherlock và Watson
     Position vitritiep = getNextPosition();
     if (vitritiep == Position::npos){
         return;
@@ -968,7 +897,6 @@ void RobotSW::move()
 
 ArrayMovingObject::ArrayMovingObject(int capacity) : capacity(capacity), count(0)
 {
-    // TODO: constructor
     arr_mv_objs = new MovingObject * [capacity];
     for(int i = 0; i < capacity; i++){
         arr_mv_objs[i] = NULL;
@@ -976,7 +904,6 @@ ArrayMovingObject::ArrayMovingObject(int capacity) : capacity(capacity), count(0
 }
 ArrayMovingObject::~ArrayMovingObject()
 {
-    // TODO: destructor
     for (int i = 0; i < count; i++){
         delete arr_mv_objs[i];
     }
@@ -985,13 +912,11 @@ ArrayMovingObject::~ArrayMovingObject()
 }
 bool ArrayMovingObject::isFull() const
 {
-    // TODO: kiểm tra số lượng đối tượng đã đầy hay chưa
     if (count == capacity) return true;
     return false;
 }
 bool ArrayMovingObject::add(MovingObject *mv_obj)
 {
-    // TODO: thêm đối tượng mới vào cuối mảng đối tượng
     if (isFull()){
         return false;
     }
@@ -1008,7 +933,6 @@ bool ArrayMovingObject::add(MovingObject *mv_obj)
 }
 MovingObject *ArrayMovingObject::get(int index) const
 {
-    // TODO: trả về đối tượng có index tương ứng
     if (index < 0 || index >= count){
         return NULL;
     }
@@ -1022,7 +946,6 @@ int ArrayMovingObject::size() const
 
 string ArrayMovingObject::str() const
 {
-    // TODO: trả về chuỗi biểu diễn mảng
     //ArrayMovingObject[count=<count>;capacity=<capacity>;<MovingObject1>;...]
     string ketqua = "ArrayMovingObject[count=" + to_string(count) + ";capacity=" + to_string(capacity) + ";";
     for(int i = 0; i < count; i++){
@@ -1039,7 +962,6 @@ string ArrayMovingObject::str() const
  */
 Configuration::Configuration(const string &filepath)
 {
-    //    TODO: constructor
     ifstream docfile(filepath);
     string dong;
     if (!docfile.is_open()) {
@@ -1180,7 +1102,6 @@ Configuration::Configuration(const string &filepath)
 
 Configuration::~Configuration()
 {
-    // TODO: destructor
     delete[] arr_walls;
     delete[] arr_fake_walls;
 }
@@ -1306,7 +1227,6 @@ void StudyPinkProgram::run(bool verbose, ofstream &OUTPUT)
         return;
     }
     bool isStop = arr_mv_objs->checkMeet(0) || sherlock->getHP() == 0 || watson->getHP() == 0;
-    //OUTPUT << config->str() << endl;
     for (int istep = 0; istep < config->num_steps && !isStop; ++istep)
     {
         isStop = arr_mv_objs->checkMeet(0) || sherlock->getHP() == 0 || watson->getHP() == 0;
@@ -1366,65 +1286,21 @@ void StudyPinkProgram::run(bool verbose, ofstream &OUTPUT)
                    << "Watson HP_" << watson->getHP() << " EXP_" << watson->getEXP() << endl
                    << "SherlockBag : " << sherlock->getBag()->str() << endl
                    << "WatsonBag : " << watson->getBag()->str() << endl;
-//            OUTPUT << "ROUND : " << istep << " - TURN : " << i << endl;
-//
-//            MovingObject *robot = nullptr;
-//            if (arr_mv_objs->get(i)->getObjectType() == MovingObjectType::CRIMINAL)
-//            {
-//                robot = Robot::create(arr_mv_objs->size(), map, criminal, sherlock, watson);
-//            }
-//            arr_mv_objs->get(i)->move();
-//            if (robot != nullptr)
-//            {
-//                if (criminal->getCount() % 3 == 0 && criminal->getCount() > 0)
-//                {
-//                    arr_mv_objs->add(robot);
-//                }
-//                else
-//                {
-//                    delete robot;
-//                }
-//            }
-//            //printMap(OUTPUT);
-//            stop = arr_mv_objs->checkMeet(i);
-//            OUTPUT << "---------------" << endl
-//                   << "LOG : " << endl
-//                   << arr_mv_objs->str() << endl
-//                   << "Sherlock HP_" << sherlock->getHP() << " EXP_" << sherlock->getEXP() << endl
-//                   << "Watson HP_" << watson->getHP() << " EXP_" << watson->getEXP() << endl
-//                   << "SherlockBag : " << sherlock->getBag()->str() << endl
-//                   << "WatsonBag : " << watson->getBag()->str() << endl;
         }
-
     }
-//    OUTPUT << "---------------" << endl
-//           << "RESULT : ";
-//
-//    if (watson->getHP() == 0)
-//        OUTPUT << "Watson can not continue the journey";
-//    else if (sherlock->getHP() == 0)
-//        OUTPUT << "Sherlock can not continue the journey";
-//    else if (stop)
-//        OUTPUT << "The Criminal was caught";
-//    else
-//        OUTPUT << "The Criminal escaped";
 }
 
 // *CLASS: MagicBook
 ItemType MagicBook::getType() const
 {
-    // TODO: get (1 dòng)
     return MAGIC_BOOK;
 }
 string MagicBook::str() const
 {
-    // TODO: trả về chuỗi biểu diễn (1 dòng)
     return "MagicBook";
 }
 bool MagicBook::canUse(Character *obj, Robot *robot)
 {
-    // TODO: điều kiện sử dụng
-    // *Sau khi đấm Robot, EXP
     if ((obj->getObjectType() == SHERLOCK || obj->getObjectType() == WATSON) && robot == nullptr){
         if (obj->getObjectType() == SHERLOCK){
             if (dynamic_cast<Sherlock*>(obj)->getEXP() <= 350){
@@ -1442,7 +1318,6 @@ bool MagicBook::canUse(Character *obj, Robot *robot)
 }
 void MagicBook::use(Character *obj, Robot *robot)
 {
-    // TODO: tăng EXP
     if (canUse(obj, robot)){
         if (obj->getObjectType() == SHERLOCK || obj->getObjectType() == WATSON){
             if (obj->getObjectType() == SHERLOCK){
@@ -1463,18 +1338,14 @@ void MagicBook::use(Character *obj, Robot *robot)
 // *CLASS: EnergyDrink
 ItemType EnergyDrink::getType() const
 {
-    // TODO: get (1 dòng)
     return ENERGY_DRINK;
 }
 string EnergyDrink::str() const
 {
-    // TODO: trả về chuỗi biển diễn (1 dòng)
     return "EnergyDrink";
 }
 bool EnergyDrink::canUse(Character *obj, Robot *robot)
 {
-    // TODO: điều kiện sử dụng
-    // *Sau khi đấm Robot, HP
     if ((obj->getObjectType() == SHERLOCK || obj->getObjectType() == WATSON) && robot == nullptr){
         if (obj->getObjectType() == SHERLOCK){
             if (dynamic_cast<Sherlock*>(obj)->getHP() <= 100){
@@ -1492,7 +1363,6 @@ bool EnergyDrink::canUse(Character *obj, Robot *robot)
 }
 void EnergyDrink::use(Character *obj, Robot *robot)
 {
-    // TODO: tăng HP
     if (canUse(obj, robot)){
         if (obj->getObjectType() == SHERLOCK || obj->getObjectType() == WATSON){
             if (obj->getObjectType() == SHERLOCK){
@@ -1514,18 +1384,14 @@ void EnergyDrink::use(Character *obj, Robot *robot)
 // *CLASS: FirstAid
 ItemType FirstAid::getType() const
 {
-    // TODO: get (1 dòng)
     return FIRST_AID;
 }
 string FirstAid::str() const
 {
-    // TODO: trả về chuỗi biểu diễn (1 dòng)
     return "FirstAid";
 }
 bool FirstAid::canUse(Character *obj, Robot *robot)
 {
-    // TODO: điều kiện sử dụng
-    // *Sau khi đấm Robot, exp || HP
     if ((obj->getObjectType() == SHERLOCK || obj->getObjectType() == WATSON) && robot == nullptr){
         if (obj->getObjectType() == SHERLOCK){
             if (dynamic_cast<Sherlock*>(obj)->getHP() <= 100 || dynamic_cast<Sherlock*>(obj)->getEXP() <= 350){
@@ -1543,7 +1409,6 @@ bool FirstAid::canUse(Character *obj, Robot *robot)
 }
 void FirstAid::use(Character *obj, Robot *robot)
 {
-    // TODO: tăng HP
     if (canUse(obj, robot)){
         if (obj->getObjectType() == SHERLOCK || obj->getObjectType() == WATSON){
             if (obj->getObjectType() == SHERLOCK){
@@ -1565,18 +1430,14 @@ void FirstAid::use(Character *obj, Robot *robot)
 // *CLASS: ExcemptionCard
 ItemType ExcemptionCard::getType() const
 {
-    // TODO: get (1 dòng)
     return  EXCEMPTION_CARD;
 }
 string ExcemptionCard::str() const
 {
-    // TODO: trả về chuỗi biểu diễn (1 dòng)
     return "ExcemptionCard";
 }
 bool ExcemptionCard::canUse(Character *obj, Robot *robot)
 {
-    // TODO: điều kiện sử dụng
-    // *Trước khi đấm Robot, Sherlock, hp lẻ
     if (obj->getObjectType() == SHERLOCK && robot != nullptr){
         if (dynamic_cast<Sherlock*>(obj)->getHP() % 2 != 0){
             return true;
@@ -1586,7 +1447,6 @@ bool ExcemptionCard::canUse(Character *obj, Robot *robot)
 }
 void ExcemptionCard::use(Character *obj, Robot *robot)
 {
-    // TODO: sinh viên hiện thực theo tư duy code của mình (hàm có thể rỗng)
     if (canUse(obj, robot)){
 
     }
@@ -1594,7 +1454,6 @@ void ExcemptionCard::use(Character *obj, Robot *robot)
 // *CLASS: PassingCard
 PassingCard::PassingCard(int i, int j)
 {
-    // TODO: constructor gán giá trị cho thuộc tính challenge (i,j là tọa độ)
     int t = (i * 11 + j) % 4;
     if (t == 0){
         challenge = "RobotS";
@@ -1611,18 +1470,14 @@ PassingCard::PassingCard(int i, int j)
 }
 ItemType PassingCard::getType() const
 {
-    // TODO: get (1 dòng)
     return PASSING_CARD;
 }
 string PassingCard::str() const
 {
-    // TODO: trả về chuỗi biểu diễn (1 dòng)
     return "PassingCard";
 }
 bool PassingCard::canUse(Character *obj, Robot *robot)
 {
-    // TODO: điều kiện sử dụng
-    // *Trước khi đấm Robot, Watson, hp chẵn
     if (obj->getObjectType() == WATSON && robot != nullptr){
         if (dynamic_cast<Watson*>(obj)->getHP() % 2 == 0){
             return true;
@@ -1632,7 +1487,6 @@ bool PassingCard::canUse(Character *obj, Robot *robot)
 }
 void PassingCard::use(Character *obj, Robot *robot)
 {
-    // TODO: tương tự ExcemptionCard khi thuộc tính challenge thích hợp, ngược lại sẽ trừ EXP
     if (challenge == "all"){
 
     }
@@ -1660,14 +1514,12 @@ void PassingCard::use(Character *obj, Robot *robot)
 // *CLASS: BaseBag
 BaseBag::BaseBag(int capacity)
 {
-    // TODO: constructor gán giá trị cho CÁC THUỘC TÍNH
     this->size = 0;
     this->capacity = capacity;
     this->head = nullptr;
 }
 BaseBag::~BaseBag()
 {
-    // TODO: destructor xóa các Node (Lưu ý phải xóa cả item trong Node đó)
 
     for (int i = 0; i < size; i++){
         Node* temp = head;
@@ -1677,7 +1529,6 @@ BaseBag::~BaseBag()
 }
 bool BaseBag::insert(BaseItem *item)
 {
-    // TODO: thêm Node chứa item vào đầu Linked List
     Node* vatPhamMoi = new Node(item);
     if (this->head == nullptr && size == 0){
         head = vatPhamMoi;
@@ -1710,9 +1561,6 @@ BaseItem* BaseBag::find(ItemType itemType) {
 }
 BaseItem* BaseBag::get(ItemType itemType)
 {
-    // TODO: Tìm và trả về item tương ứng với itemType
-    // *Đảo vị trí trong BaseBag (2 cách phổ biến: swap Node hoặc con trỏ item của Node)
-    // *Sau đó xóa Node (lưu ý cập nhật con trỏ head)
 
     Node* temp = head;
 
@@ -1737,8 +1585,6 @@ BaseItem* BaseBag::get(ItemType itemType)
 }
 string BaseBag::str() const
 {
-    // TODO: trả về chuỗi biểu diễn
-    // *"Bag[count=<thuộc tính size>;<danh sách tên các item cách nhau bởi dấu ,>]"
     string s;
     Node* temp = head;
     for (int i = 0; i < size; i++){
@@ -1753,16 +1599,13 @@ string BaseBag::str() const
 // *CLASS: SherlockBag
 SherlockBag::SherlockBag(Sherlock *character)
         : BaseBag(
-        // TODO: constructor class cha
         13
 )
 {
-    // TODO: constructor class con
     sherlock = character;
 }
 BaseItem *SherlockBag::get()
 {
-    // TODO: tìm và trả về item SHERLOCK CÓ THỂ SỬ DỤNG gấn đầu túi nhất, đảo lên đầu và xóa khỏi Linked List (cập nhật head)
     Node* temp = head;
     for (int i = 0; i < size; i++){
         if (temp->item->canUse(this->sherlock, nullptr)){
@@ -1787,16 +1630,13 @@ BaseItem *SherlockBag::get()
 // *CLASS: WatsonBag
 WatsonBag::WatsonBag(Watson *character)
         : BaseBag(
-        // TODO: constructor class cha
         15
 )
 {
-    // TODO: constructor class con
     watson = character;
 }
 BaseItem *WatsonBag::get()
 {
-    // TODO: tìm và trả về item WATSON CÓ THỂ SỬ DỤNG gấn đầu túi nhất, đảo lên đầu và xóa khỏi Linked List (cập nhật head)
     Node* temp = head;
     for (int i = 0; i < size; i++){
         if (temp->item->canUse(this->watson, nullptr)){
@@ -1821,21 +1661,9 @@ BaseItem *WatsonBag::get()
 
 }
 
-
-
-// *------------------------------------------------------------------
-// *
-// *------------------------------------------------------------------
-// !-----------------------------------
-// ! Lưu ý về việc xét thông số khi tăng giảm
-// ! Các thay đổi thông số là dựa trên thông số hiện tại
-// ! Các thông số không phải số nguyên THỰC HIỆN LÀM TRÒN LÊN -> NHÂN VẬT CHỈ HI SINH KHI INIT hp = 0
-// !-----------------------------------
 // *CLASS: ArrayMovingObject
 bool ArrayMovingObject::checkMeet(int index)
 {
-    // TODO: Xét va chạm của nhân vật (theo index) với các nhân vật khác trong array
-    // TODO: Thực hiện xử lý các sự kiện xảy ra (thử thách, thêm item, bắt Criminal)
 
     MovingObjectType theloai = arr_mv_objs[index]->getObjectType();
 
@@ -1961,8 +1789,6 @@ bool ArrayMovingObject::checkMeet(int index)
     return false;
 }
 // *CLASS: Sherlock
-// ! Lưu ý: ExcemptionCard được dùng để BỎ QUA nếu THỬ THÁCH THẤT BẠI -> xem như không thực hiện thử thách -> không gọi get lần 2
-// ! Thực hiện get từ bag sau khi insert item
 bool Sherlock::meet(RobotS *robotS)
 {
     // TODO: Xử lý khi gặp robot S
@@ -2029,7 +1855,6 @@ bool Sherlock::meet(RobotS *robotS)
 }
 bool Sherlock::meet(RobotW *robotW)
 {
-    // TODO: Xử lý khi gặp robot W
     BaseItem* vatphamsudung = this->bag->find(EXCEMPTION_CARD);
     if (vatphamsudung != nullptr){
         if(vatphamsudung->canUse(this, robotW)){
@@ -2134,7 +1959,6 @@ bool Sherlock::meet(RobotSW *robotSW)
 }
 bool Sherlock::meet(RobotC *robotC)
 {
-    // TODO: Xử lý khi gặp robot C
 
     if (this->exp > 500){
         BaseItem* vatphamsudung = this->bag->find(EXCEMPTION_CARD);
@@ -2195,8 +2019,6 @@ bool Sherlock::meet(RobotC *robotC)
 }
 bool Sherlock::meet(Watson *watson)
 {
-    // TODO: Xử lý trao đổi thẻ ExcemptionCard
-    // TODO: KHI CẢ 2 ĐỀU CÓ THỂ TRAO ĐỔI && ĐỔI TOÀN BỘ NẾU NHIỀU HƠN 1 (KỂ CẢ KHI ĐỐI PHƯƠNG)
 
     if (!(this->bag->checkItem(PASSING_CARD) && watson->getBag()->checkItem(EXCEMPTION_CARD))) return false;
 
@@ -2225,12 +2047,9 @@ bool Sherlock::meet(Watson *watson)
     return true;
 }
 // *CLASS: Watson
-// ! Lưu ý: PassingCard được dùng khi GẶP ROBOT để bỏ qua thử thách nếu đúng loại thẻ
-// ! Thực hiện get từ bag sau khi insert item
+
 bool Watson::meet(RobotS *robotS)
 {
-    // TODO: Xử lý trao đổi khi gặp robot S
-    //BaseItem* vatphamsudung = this->bag->get(PASSING_CARD);
     BaseItem* vatphamsudung = this->bag->find(PASSING_CARD);
     if (vatphamsudung != nullptr) {
         if (vatphamsudung->canUse(this, robotS)) {
@@ -2251,9 +2070,6 @@ bool Watson::meet(RobotS *robotS)
 }
 bool Watson::meet(RobotW *robotW)
 {
-    // TODO: Xử lý trao đổi khi gặp robot W
-
-
     if (this->hp > 350){
         bool dungchua = false;
         BaseItem* vatphamsudung = this->bag->find(PASSING_CARD);
@@ -2333,7 +2149,6 @@ bool Watson::meet(RobotW *robotW)
 }
 bool Watson::meet(RobotSW *robotSW)
 {
-    // TODO: Xử lý trao đổi khi gặp robot SW
 
     if (this->exp > 600 && this->hp > 165){
         bool dungchua = false;
@@ -2417,7 +2232,6 @@ bool Watson::meet(RobotSW *robotSW)
 }
 bool Watson::meet(RobotC *robotC)
 {
-    // TODO: Xử lý trao đổi khi gặp robot C
     bool dungchua = false;
     BaseItem* vatphamsudung = this->bag->find(PASSING_CARD);
     if (vatphamsudung != nullptr){
@@ -2455,7 +2269,6 @@ bool Watson::meet(RobotC *robotC)
 }
 bool Watson::meet(Sherlock *sherlock)
 {
-    // TODO: Xử lý trao đổi khi gặp Sherlock
 
     if (!(this->bag->checkItem(EXCEMPTION_CARD) && sherlock->getBag()->checkItem(PASSING_CARD))) return false;
 
@@ -2486,12 +2299,10 @@ bool Watson::meet(Sherlock *sherlock)
 
 BaseBag *Sherlock::getBag() const
 {
-    // TODO: get bag
     return this->bag;
 }
 BaseBag *Watson::getBag() const
 {
-    // TODO: get bag
     return this->bag;
 }
 

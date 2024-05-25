@@ -344,7 +344,6 @@ public:
     string str() const;
 };
 
-// Robot, BaseItem, BaseBag,...
 class Robot : public MovingObject
 {
     friend class TestStudyPink;
@@ -615,7 +614,6 @@ class StudyPinkProgram
     friend class TestStudyPink;
 
 private:
-    // Sample attributes
     Configuration *config;
     Sherlock *sherlock;
     Watson *watson;
