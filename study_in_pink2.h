@@ -43,6 +43,7 @@ class ExcemptionCard;
 class EnergyDrink;
 class PassingCard;
 class FirstAid;
+
 class Character;
 class Watson;
 class Sherlock;
@@ -98,6 +99,9 @@ class Path : public MapElement
 
 public:
     Path();
+    ~Path() {
+
+    }
 };
 
 class Wall : public MapElement
@@ -106,6 +110,9 @@ class Wall : public MapElement
 
 public:
     Wall();
+    ~Wall() {
+
+    }
 };
 
 class FakeWall : public MapElement
@@ -117,6 +124,9 @@ private:
 
 public:
     FakeWall(int in_req_exp);
+    ~FakeWall() {
+
+    }
     int getReqExp() const;
 };
 
@@ -126,7 +136,7 @@ class Map
 
 private:
     int num_rows, num_cols;
-    
+
     MapElement ***map;
 
 public:
@@ -180,7 +190,7 @@ public:
     Position getCurrentPosition() const;
     virtual void move() = 0;
     virtual string str() const = 0;
-    
+
     virtual MovingObjectType getObjectType() const = 0;
 };
 
@@ -190,7 +200,7 @@ class Character : public MovingObject
 
 public:
     Character(int index, const Position pos, Map *map, const string &name = "");
-    
+
     virtual Position getNextPosition() = 0;
     virtual void move() = 0;
     virtual string str() const = 0;
@@ -204,7 +214,7 @@ class Sherlock : public Character
 private:
     // TODO
     int hp, exp;
-    
+
     string moving_rule;
     int index_moving_rule;
     BaseBag *bag;
@@ -214,7 +224,7 @@ public:
     Position getNextPosition();
     void move();
     string str() const;
-    
+
     MovingObjectType getObjectType() const;
     BaseBag *getBag() const;
     int getHP() const;
@@ -237,7 +247,7 @@ class Watson : public Character
 private:
     // TODO
     int hp, exp;
-    
+
     string moving_rule;
     int index_moving_rule;
     BaseBag *bag;
@@ -246,7 +256,7 @@ public:
     Position getNextPosition();
     void move();
     string str() const;
-    
+
     MovingObjectType getObjectType() const;
     BaseBag *getBag() const;
     int getHP() const;
@@ -269,7 +279,7 @@ private:
     // TODO
     Sherlock *sherlock;
     Watson *watson;
-    
+
     int count;
     Position prev_pos;
 
@@ -278,7 +288,7 @@ public:
     Position getNextPosition();
     void move();
     string str() const;
-    
+
     int manhattanDistance(const Position &pos1, const Position &pos2) const{
         return abs(pos1.getCol() - pos2.getCol()) + abs(pos1.getRow() - pos2.getRow());
     }
@@ -307,7 +317,7 @@ public:
     bool isFull() const;
     bool add(MovingObject *mv_obj);
     string str() const;
-    
+
     bool checkMeet(int index);
     MovingObject *get(int index) const;
     int size() const;
@@ -365,7 +375,7 @@ public:
     virtual void move() = 0;
     virtual string str() const = 0;
     virtual RobotType getType();
-    
+
     static Robot *create(int index, Map *map, Criminal *criminal, Sherlock *sherlock, Watson *watson);
     virtual int getDistance() const = 0;
     BaseItem* getItem() { return item; }
@@ -389,7 +399,7 @@ public:
     int getDistance(Watson *watson);
 
     string str() const;
-    
+
     int getDistance() const override;
     RobotType getType() const;
     ~RobotC(){}
@@ -412,7 +422,7 @@ public:
     void move();
     int getDistance() const;
     string str() const;
-    
+
     RobotType getType() const;
     ~RobotS(){}
 };
@@ -434,7 +444,7 @@ public:
     void move();
     int getDistance() const;
     string str() const;
-    
+
     RobotType getType() const ;
     ~RobotW(){}
 };
@@ -459,7 +469,7 @@ public:
     string str() const;
     int getDistance() const;
     void move();
-    
+
     RobotType getType() const;
     ~RobotSW(){}
 };
@@ -471,13 +481,15 @@ class BaseItem
 public:
     virtual bool canUse(Character *obj, Robot *robot) = 0;
     virtual void use(Character *obj, Robot *robot) = 0;
-    
-   BaseItem(){
 
-   }
+    BaseItem(){
+
+    }
     virtual ItemType getType() const = 0;
     virtual string str() const = 0;
-    virtual ~BaseItem() {}
+    virtual ~BaseItem() {
+
+    }
 };
 
 class MagicBook : public BaseItem
@@ -490,7 +502,7 @@ public:
     }
     bool canUse(Character *obj, Robot *robot);
     void use(Character *obj, Robot *robot);
-    
+
     ItemType getType() const;
     string str() const;
 };
@@ -505,7 +517,7 @@ public:
     }
     bool canUse(Character *obj, Robot *robot);
     void use(Character *obj, Robot *robot);
-    
+
     ItemType getType() const;
     string str() const;
 };
@@ -520,7 +532,7 @@ public:
     }
     bool canUse(Character *obj, Robot *robot);
     void use(Character *obj, Robot *robot);
-    
+
     ItemType getType() const;
     string str() const;
 };
@@ -535,7 +547,7 @@ public:
     }
     bool canUse(Character *obj, Robot *robot);
     void use(Character *obj, Robot *robot);
-    
+
     ItemType getType() const;
     string str() const;
 };
@@ -552,7 +564,7 @@ public:
     PassingCard(int i, int j);
     bool canUse(Character *obj, Robot *robot);
     void use(Character *obj, Robot *robot);
-    
+
     ItemType getType() const;
     string str() const;
     string getChallenge(){return challenge;}
@@ -561,12 +573,11 @@ public:
     }
 };
 
-class BaseBag
-{
+class BaseBag {
     friend class TestStudyPink;
 
 protected:
-    
+
     class Node
     {
     public:
@@ -575,11 +586,14 @@ protected:
 
     public:
         Node(BaseItem *item, Node *next = nullptr) : item(item), next(next) {}
+        ~Node() {
+            delete item;
+        }
     };
 
 protected:
     Character *obj;
-    
+
     int size;
     int capacity;
     Node *head;
@@ -590,11 +604,23 @@ public:
     virtual BaseItem *get(ItemType itemType);
     virtual string str() const;
 
-    
+
     BaseBag(int capacity);
     virtual ~BaseBag();
     bool checkItem(ItemType itemType);
     BaseItem* find(ItemType itemType);
+    bool findTest(ItemType itemType) {
+        Node* temp = this->head;
+
+        for (int i = 0; i < size; i++){
+            if (temp->item->getType() == itemType){
+                return true;
+            }
+            temp=temp->next;
+        }
+
+        return false;
+    }
 
     bool isFull() const;
 };
@@ -634,7 +660,7 @@ private:
     Criminal *criminal;
     Map *map;
     ArrayMovingObject *arr_mv_objs;
-    
+
     string outputFile;
 
 public:
@@ -642,29 +668,29 @@ public:
     bool isStop() const;
     void printResult() const
     {
-         if (sherlock->getCurrentPosition().isEqual(criminal->getCurrentPosition()))
-         {
-             cout << "Sherlock caught the criminal" << endl;
-         }
-         else if (watson->getCurrentPosition().isEqual(criminal->getCurrentPosition()))
-         {
-             cout << "Watson caught the criminal" << endl;
-         }
-         else
-         {
-             cout << "The criminal escaped" << endl;
-         }
+        if (sherlock->getCurrentPosition().isEqual(criminal->getCurrentPosition()))
+        {
+            cout << "Sherlock caught the criminal" << endl;
+        }
+        else if (watson->getCurrentPosition().isEqual(criminal->getCurrentPosition()))
+        {
+            cout << "Watson caught the criminal" << endl;
+        }
+        else
+        {
+            cout << "The criminal escaped" << endl;
+        }
     }
 
     void printStep(int si) const
     {
-         cout << "Step: " << setw(4) << setfill('0') << si
-              << "--"
-              << sherlock->str() << "--|--" << watson->str() << "--|--" << criminal->str() << endl;
+        cout << "Step: " << setw(4) << setfill('0') << si
+             << "--"
+             << sherlock->str() << "--|--" << watson->str() << "--|--" << criminal->str() << endl;
     }
     void run(bool verbose);
     ~StudyPinkProgram();
-    
+
     void run(ofstream &OUTPUT);
     void run(bool verbose, ofstream &OUTPUT);
     void printInfo(int si, int i, ofstream &OUTPUT)
@@ -672,7 +698,7 @@ public:
         OUTPUT << endl
                << "*************AFTER MOVE*************" << endl;
         OUTPUT
-            << "ROUND : " << si << " - TURN : " << i << endl;
+                << "ROUND : " << si << " - TURN : " << i << endl;
         stringstream ss(arr_mv_objs->str());
         string lineArr = "";
         getline(ss, lineArr, 'C');

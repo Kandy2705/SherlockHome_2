@@ -1,6 +1,3 @@
-// Map xét điều kiện col row = 0 tránh cấp phát lỗi
-// getCount của BaseBag theo test của thầy là trả về chuỗi "Bag[count="+<size>+";]"
-
 #include "study_in_pink2.h"
 
 ////////////////////////////////////////////////////////////////////////
@@ -403,6 +400,9 @@ Map::Map(int num_rows, int num_cols, int num_walls, Position *array_walls, int n
         int c = array_fake_walls[i].getCol();
         if (r < num_rows && r >= 0 && c >= 0 && c < num_cols){
             if ((!(map[r][c] != nullptr && map[r][c]->getType() == WALL))){
+                if (map[r][c] != nullptr) {
+                    delete map[r][c];
+                }
                 map[r][c] = new FakeWall((r * 257 + c * 139 + 89) % 900 + 1);
             }
         }
@@ -1202,64 +1202,9 @@ StudyPinkProgram::~StudyPinkProgram()
     delete arr_mv_objs;
     delete config;
 }
-
-//void StudyPinkProgram::printMap(ofstream &OUTPUT) const
-//{
-//    for (int i = -1; i < config->map_num_cols; i++)
-//    {
-//        if (i == -1){
-//            //OUTPUT << setw(6) << ""
-//            //       << "|";
-//        }
-//
-//        else
-//            OUTPUT << setw(7) << i << "|";
-//    }
-//    OUTPUT << endl;
-//    for (int i = 0; i < config->map_num_rows; i++)
-//    {
-//        //OUTPUT << setw(6) << i << "|";
-//        for (int j = 0; j < config->map_num_cols; j++)
-//        {
-//            int idx = map->getElementType(i, j);
-//            string nameElement[3] = {"     ", "IIIII", "-----"};
-//            string nameChar[4] = {"S", "W", "C", "R"};
-//            string robotName[4] = {"0", "1", "2", "3"};
-//            string cellValue = nameElement[idx];
-//            Position charPos(i, j);
-//
-////            if (i == 12 && j == 0){
-////                cout << "Hello";
-////            }
-//
-//
-//            for (int k = 0; k < arr_mv_objs->size(); k++)
-//            {
-//                if (arr_mv_objs->get(k)->getCurrentPosition().isEqual(charPos))
-//                {
-//                    if (cellValue == "     " || cellValue == "-----" || cellValue == "IIIII")
-//                        cellValue = "";
-//                    idx = arr_mv_objs->get(k)->getObjectType();
-//                    if (idx == 3)
-//                    {
-//                        MovingObject *temp = arr_mv_objs->get(k);
-//                        while (cellValue[cellValue.length() - 1] == ' ')
-//                        {
-//                            cellValue = cellValue.substr(0, cellValue.length() - 1);
-//                        }
-//                        cellValue += robotName[dynamic_cast<Robot *>(temp)->getType()];
-//                        continue;
-//                    }
-//                    cellValue += nameChar[idx];
-//                }
-//            }
-//            if (!(cellValue == "     " || cellValue == "-----" || cellValue == "IIIII"))
-//                cellValue = /*"(" +*/ cellValue /*+ ")"*/;
-//            OUTPUT << setw(7) << cellValue << "|";
-//        }
-//        OUTPUT << endl;
-//    }
-//}
+bool StudyPinkProgram::isStop() const {
+    return arr_mv_objs->checkMeet(0) || sherlock->getHP() == 0 || watson->getHP() == 0;
+}
 void StudyPinkProgram::run(bool verbose, ofstream &OUTPUT)
 {
     if (verbose == false) return;
@@ -1304,11 +1249,16 @@ void StudyPinkProgram::run(bool verbose, ofstream &OUTPUT)
             {
                 if (criminal->getCount() % 3 == 0 && criminal->getCount() > 0)
                 {
-                    arr_mv_objs->add(robot);
+                    if (!arr_mv_objs->add(robot)) {
+                        delete robot;
+                        robot = nullptr;
+                    }
+
                 }
                 else
                 {
                     delete robot;
+                    robot = nullptr;
                 }
             }
             isStop = arr_mv_objs->checkMeet(i);
@@ -1601,6 +1551,8 @@ bool BaseBag::insert(BaseItem *item)
         return true;
     }
 
+    vatPhamMoi->item = nullptr;
+    delete vatPhamMoi;
     return false;
 
 }
@@ -1629,12 +1581,17 @@ BaseItem* BaseBag::get(ItemType itemType)
         temp = temp->next;
     }
 
+    BaseItem* returnItem = nullptr;
+
     if (temp != nullptr){
         swap(temp->item, head->item);
         temp = head;
         head = head -> next;
         size -= 1;
-        return temp->item;
+        returnItem = temp->item;
+        temp->item = nullptr;
+        delete temp;
+        return returnItem;
     }
 
     //delete temp;
@@ -1672,13 +1629,17 @@ BaseItem *SherlockBag::get()
         temp = temp->next;
     }
 
+    BaseItem* returnItem = nullptr;
+
     if (temp != nullptr){
         swap(temp->item, head->item);
-
         temp = head;
         head = head -> next;
         size -= 1;
-        return temp->item;
+        returnItem = temp->item;
+        temp->item = nullptr;
+        delete temp;
+        return returnItem;
     }
 
     //delete temp;
@@ -1703,18 +1664,20 @@ BaseItem *WatsonBag::get()
         temp = temp->next;
     }
 
+    BaseItem * returnItem = nullptr;
+
     if (temp != nullptr){
         swap(temp->item, head->item);
 
         temp = head;
         head = head -> next;
         size -= 1;
-        return temp->item;
+        returnItem = temp->item;
+        temp->item = nullptr;
+        delete temp;
+        return returnItem;
     }
 
-
-
-    //delete temp;
     return nullptr;
 
 }
@@ -1852,13 +1815,18 @@ bool Sherlock::meet(RobotS *robotS)
     // TODO: Xử lý khi gặp robot S
 
     if (this->exp > 400){
+        // bool check = this->bag->findTest(EXCEMPTION_CARD);
         BaseItem* vatphamsudung = this->bag->find(EXCEMPTION_CARD);
         if (vatphamsudung != nullptr){
             if(vatphamsudung->canUse(this, robotS)){
                 vatphamsudung = this->bag->get(EXCEMPTION_CARD);
                 vatphamsudung->use(this, robotS);
+                delete vatphamsudung;
             }
-            else vatphamsudung = nullptr;
+            else {
+                vatphamsudung = nullptr;
+                // delete vatphamsudung;
+            }
         }
         BaseItem * newItem;
         if (robotS->getItem()->getType() == MAGIC_BOOK){
@@ -1876,9 +1844,10 @@ bool Sherlock::meet(RobotS *robotS)
         else{
             newItem = new PassingCard(robotS->getPoshead().getRow(), robotS->getPoshead().getCol());
         }
-        this->bag->insert(newItem);
 
-
+        if(!this->bag->insert(newItem)) {
+            delete newItem;
+        }
 
         vatphamsudung = this->bag->get();
         if (vatphamsudung != nullptr) {
@@ -1895,6 +1864,7 @@ bool Sherlock::meet(RobotS *robotS)
                 vatphamsudung = this->bag->get(EXCEMPTION_CARD);
                 vatphamsudung->use(this, robotS);
                 dungchua = true;
+                delete vatphamsudung;
             }
             else dungchua = false;
         }
@@ -1918,8 +1888,12 @@ bool Sherlock::meet(RobotW *robotW)
         if(vatphamsudung->canUse(this, robotW)){
             vatphamsudung = this->bag->get(EXCEMPTION_CARD);
             vatphamsudung->use(this, robotW);
+            delete vatphamsudung;
         }
-        else vatphamsudung = nullptr;
+        else {
+            vatphamsudung = nullptr;
+            delete vatphamsudung;
+        }
     }
 
     BaseItem * newItem;
@@ -1939,7 +1913,9 @@ bool Sherlock::meet(RobotW *robotW)
         newItem = new PassingCard(robotW->getPoshead().getRow(), robotW->getPoshead().getCol());
     }
 
-    this->bag->insert(newItem);
+    if(!this->bag->insert(newItem)) {
+        delete newItem;
+    }
 
     vatphamsudung = this->bag->get();
     if (vatphamsudung != nullptr) {
@@ -1958,6 +1934,7 @@ bool Sherlock::meet(RobotSW *robotSW)
             if(vatphamsudung->canUse(this, robotSW)){
                 vatphamsudung = this->bag->get(EXCEMPTION_CARD);
                 vatphamsudung->use(this, robotSW);
+                delete vatphamsudung;
             }
             else vatphamsudung = nullptr;
         }
@@ -1979,7 +1956,9 @@ bool Sherlock::meet(RobotSW *robotSW)
             newItem = new PassingCard(robotSW->getPoshead().getRow(), robotSW->getPoshead().getCol());
         }
 
-        this->bag->insert(newItem);
+        if(!this->bag->insert(newItem)) {
+            delete newItem;
+        }
 
         vatphamsudung = this->bag->get();
         if (vatphamsudung != nullptr) {
@@ -1995,6 +1974,7 @@ bool Sherlock::meet(RobotSW *robotSW)
             if(vatphamsudung->canUse(this, robotSW)){
                 vatphamsudung = this->bag->get(EXCEMPTION_CARD);
                 vatphamsudung->use(this, robotSW);
+                delete vatphamsudung;
                 dungchua = true;
             }
             else dungchua = false;
@@ -2024,6 +2004,7 @@ bool Sherlock::meet(RobotC *robotC)
             if(vatphamsudung->canUse(this, robotC)){
                 vatphamsudung = this->bag->get(EXCEMPTION_CARD);
                 vatphamsudung->use(this, robotC);
+                delete vatphamsudung;
             }
             else vatphamsudung = nullptr;
         }
@@ -2042,6 +2023,7 @@ bool Sherlock::meet(RobotC *robotC)
             if(vatphamsudung->canUse(this, robotC)){
                 vatphamsudung = this->bag->get(EXCEMPTION_CARD);
                 vatphamsudung->use(this, robotC);
+                delete vatphamsudung;
             }
             else vatphamsudung = nullptr;
         }
@@ -2063,7 +2045,9 @@ bool Sherlock::meet(RobotC *robotC)
             newItem = new PassingCard(robotC->getPoshead().getRow(), robotC->getPoshead().getCol());
         }
 
-        this->bag->insert(newItem);
+        if(!this->bag->insert(newItem)) {
+            delete newItem;
+        }
 
         vatphamsudung = this->bag->get();
         if (vatphamsudung != nullptr) {
@@ -2113,6 +2097,7 @@ bool Watson::meet(RobotS *robotS)
         if (vatphamsudung->canUse(this, robotS)) {
             vatphamsudung = this->bag->get(PASSING_CARD);
             vatphamsudung->use(this, robotS);
+            delete vatphamsudung;
         } else {
             vatphamsudung = nullptr;
         }
@@ -2136,6 +2121,7 @@ bool Watson::meet(RobotW *robotW)
                 vatphamsudung = this->bag->get(PASSING_CARD);
                 vatphamsudung->use(this, robotW);
                 dungchua = true;
+                delete vatphamsudung;
             } else dungchua = false;
         }
         BaseItem * newItem;
@@ -2155,7 +2141,9 @@ bool Watson::meet(RobotW *robotW)
             newItem = new PassingCard(robotW->getPoshead().getRow(), robotW->getPoshead().getCol());
         }
 
-        this->bag->insert(newItem);
+        if(!this->bag->insert(newItem)) {
+            delete newItem;
+        }
 
         vatphamsudung = this->bag->get();
         if (vatphamsudung != nullptr) {
@@ -2172,6 +2160,7 @@ bool Watson::meet(RobotW *robotW)
                 vatphamsudung = this->bag->get(PASSING_CARD);
                 vatphamsudung->use(this, robotW);
                 dungchua = true;
+                delete vatphamsudung;
             } else dungchua = false;
         }
         if (dungchua == true){
@@ -2192,7 +2181,9 @@ bool Watson::meet(RobotW *robotW)
                 newItem = new PassingCard(robotW->getPoshead().getRow(), robotW->getPoshead().getCol());
             }
 
-            this->bag->insert(newItem);
+            if(!this->bag->insert(newItem)) {
+                delete newItem;
+            }
         }
         if (dungchua == false) hp = ceil(hp * 0.95);
         vatphamsudung = this->bag->get();
@@ -2216,6 +2207,7 @@ bool Watson::meet(RobotSW *robotSW)
                 vatphamsudung = this->bag->get(PASSING_CARD);
                 vatphamsudung->use(this, robotSW);
                 dungchua = true;
+                delete vatphamsudung;
             } else dungchua = false;
         }
         BaseItem * newItem;
@@ -2235,7 +2227,9 @@ bool Watson::meet(RobotSW *robotSW)
             newItem = new PassingCard(robotSW->getPoshead().getRow(), robotSW->getPoshead().getCol());
         }
 
-        this->bag->insert(newItem);
+        if(!this->bag->insert(newItem)) {
+            delete newItem;
+        }
 
         vatphamsudung = this->bag->get();
         if (vatphamsudung != nullptr) {
@@ -2252,6 +2246,7 @@ bool Watson::meet(RobotSW *robotSW)
                 vatphamsudung = this->bag->get(PASSING_CARD);
                 vatphamsudung->use(this, robotSW);
                 dungchua = true;
+                delete vatphamsudung;
             } else dungchua = false;
         }
         if (dungchua == true){
@@ -2272,7 +2267,9 @@ bool Watson::meet(RobotSW *robotSW)
                 newItem = new PassingCard(robotSW->getPoshead().getRow(), robotSW->getPoshead().getCol());
             }
 
-            this->bag->insert(newItem);
+            if(!this->bag->insert(newItem)) {
+                delete newItem;
+            }
         }
         if (dungchua == false){
             hp = ceil(hp * 0.85);
@@ -2297,6 +2294,7 @@ bool Watson::meet(RobotC *robotC)
             vatphamsudung = this->bag->get(PASSING_CARD);
             vatphamsudung->use(this, robotC);
             dungchua = true;
+            delete vatphamsudung;
         } else dungchua = false;
     }
     BaseItem * newItem;
@@ -2316,7 +2314,9 @@ bool Watson::meet(RobotC *robotC)
         newItem = new PassingCard(robotC->getPoshead().getRow(), robotC->getPoshead().getCol());
     }
 
-    this->bag->insert(newItem);
+    if(!this->bag->insert(newItem)) {
+        delete newItem;
+    }
 
     vatphamsudung = this->bag->get();
     if (vatphamsudung != nullptr) {
