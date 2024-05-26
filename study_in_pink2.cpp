@@ -1,5 +1,13 @@
-// nộp Bkel cần xóa đổi lại 2 hàm printResult và printStep gốc, xóa thuộc tính outputFile
+// Map xét điều kiện col row = 0 tránh cấp phát lỗi
+// getCount của BaseBag theo test của thầy là trả về chuỗi "Bag[count="+<size>+";]"
+
 #include "study_in_pink2.h"
+
+////////////////////////////////////////////////////////////////////////
+/// STUDENT'S ANSWER BEGINS HERE
+/// Complete the following functions
+/// DO NOT modify any parameters in the functions.
+////////////////////////////////////////////////////////////////////////
 
 const Position Position::npos = Position(-1, -1);
 /*
@@ -143,6 +151,9 @@ Robot::Robot(int index, const Position &pos, Map *map, Criminal *criminal, const
         poshead.setCol(pos.getCol());
     }
 }
+Robot::~Robot(){
+    delete item;
+}
 
 RobotType Robot::getType() {
     return this->robot_type;
@@ -177,7 +188,7 @@ Sherlock::Sherlock(int index, const string &moving_rule, const Position &init_po
 }
 
 Sherlock::~Sherlock(){
-
+    delete bag;
 }
 
 void Sherlock::setPos(Position pos) {
@@ -284,7 +295,7 @@ Watson::Watson(int index, const string &moving_rule, const Position &init_pos, M
 }
 
 Watson::~Watson(){
-
+    delete bag;
 }
 
 Position Watson::getNextPosition()
@@ -364,8 +375,9 @@ void Watson::setEXP(int exp)
  * CLASS: Map
  */
 Map::Map(int num_rows, int num_cols, int num_walls, Position *array_walls, int num_fake_walls, Position *array_fake_walls)
+        : num_rows(num_rows), num_cols(num_cols)
 {
-
+    if(num_cols == 0 || num_rows == 0) return;
     this->num_rows = num_rows;
     this->num_cols = num_cols;
 
@@ -406,6 +418,7 @@ Map::Map(int num_rows, int num_cols, int num_walls, Position *array_walls, int n
 }
 Map::~Map()
 {
+    if (num_rows == 0 || num_cols == 0) return;
     for (int i = 0; i < num_rows; i++){
         for (int j = 0; j < num_cols; j++){
             delete map[i][j];
@@ -415,9 +428,10 @@ Map::~Map()
 
     for (int i = 0; i < num_rows; i++){
         delete [] map[i];
+        map[i] = nullptr;
     }
-
     delete [] map;
+    map = nullptr;
 }
 
 int Map::getNumRows() const
@@ -432,7 +446,7 @@ ElementType Map::getElementType(int i, int j) const
 {
     return map[i][j] -> getType();
 }
-bool Map::isValid(const Position pos, MovingObject *mv_obj) const
+bool Map::isValid(const Position &pos, MovingObject *mv_obj) const
 {
     int i = pos.getRow() , j = pos.getCol();
     if (i>= num_rows || i < 0 || j >= num_cols || j < 0) return false;
@@ -464,6 +478,8 @@ bool Map::isValid(const Position pos, MovingObject *mv_obj) const
 Criminal::Criminal(int index, const Position &init_pos, Map *map, Sherlock *sherlock, Watson *watson)
         : Character(index,init_pos,map,"Criminal"), sherlock(sherlock), watson(watson)
 {
+    prev_pos.setCol(-1);
+    prev_pos.setRow(-1);
     count = 0;
 }
 
@@ -904,7 +920,10 @@ ArrayMovingObject::ArrayMovingObject(int capacity) : capacity(capacity), count(0
 }
 ArrayMovingObject::~ArrayMovingObject()
 {
-    for (int i = 0; i < count; i++){
+    for (int i = 3; i < count; i++){
+        if (arr_mv_objs[i]->getObjectType() == SHERLOCK) continue;
+        if (arr_mv_objs[i]->getObjectType() == WATSON) continue;
+        if (arr_mv_objs[i]->getObjectType() == CRIMINAL) continue;
         delete arr_mv_objs[i];
     }
 
@@ -962,6 +981,24 @@ string ArrayMovingObject::str() const
  */
 Configuration::Configuration(const string &filepath)
 {
+    num_fake_walls = 0;
+    num_walls = 0;
+    num_steps = 0;
+    sherlock_init_exp = 0;
+    sherlock_moving_rule = "";
+    watson_init_exp = 0;
+    watson_moving_rule = "";
+    sherlock_init_hp = 0;
+    watson_init_hp= 0;
+    sherlock_init_pos = Position::npos;
+    watson_init_pos = Position::npos;
+    criminal_init_pos = Position::npos;
+    arr_fake_walls = nullptr;
+    arr_walls = nullptr;
+    map_num_cols = 0;
+    map_num_rows = 0;
+    max_num_moving_objects = 0;
+
     ifstream docfile(filepath);
     string dong;
     if (!docfile.is_open()) {
@@ -1158,9 +1195,12 @@ StudyPinkProgram::StudyPinkProgram(const string &config_file_path)
 }
 StudyPinkProgram::~StudyPinkProgram()
 {
+    delete sherlock;
+    delete watson;
+    delete criminal;
     delete map;
-    delete config;
     delete arr_mv_objs;
+    delete config;
 }
 
 //void StudyPinkProgram::printMap(ofstream &OUTPUT) const
@@ -1222,11 +1262,12 @@ StudyPinkProgram::~StudyPinkProgram()
 //}
 void StudyPinkProgram::run(bool verbose, ofstream &OUTPUT)
 {
+    if (verbose == false) return;
     if (!OUTPUT.is_open())
     {
         return;
     }
-    bool isStop = arr_mv_objs->checkMeet(0) || sherlock->getHP() == 0 || watson->getHP() == 0;
+    bool isStop; //= arr_mv_objs->checkMeet(0) || sherlock->getHP() == 0 || watson->getHP() == 0;
     for (int istep = 0; istep < config->num_steps && !isStop; ++istep)
     {
         isStop = arr_mv_objs->checkMeet(0) || sherlock->getHP() == 0 || watson->getHP() == 0;
@@ -1468,6 +1509,22 @@ PassingCard::PassingCard(int i, int j)
         challenge = "all";
     }
 }
+
+PassingCard::PassingCard(string s)
+{
+    if (s == "RobotS") {
+        challenge = "RobotS";
+    }
+    else if (s == "RobotC"){
+        challenge = "RobotC";
+    }
+    else if (s == "RobotSW"){
+        challenge = "RobotSW";
+    }
+    else if (s == "all"){
+        challenge = "all";
+    }
+}
 ItemType PassingCard::getType() const
 {
     return PASSING_CARD;
@@ -1524,7 +1581,8 @@ BaseBag::~BaseBag()
     for (int i = 0; i < size; i++){
         Node* temp = head;
         head = head -> next;
-        delete temp->item;
+        //delete temp->item;
+        delete temp;
     }
 }
 bool BaseBag::insert(BaseItem *item)

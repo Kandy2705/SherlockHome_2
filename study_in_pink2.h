@@ -137,7 +137,7 @@ public:
     int getNumRows() const;
     int getNumCols() const;
     ElementType getElementType(int i, int j) const;
-    bool isValid(const Position pos, MovingObject *mv_obj) const;
+    bool isValid(const Position &pos, MovingObject *mv_obj) const;
 };
 
 class Position
@@ -370,7 +370,7 @@ public:
     virtual int getDistance() const = 0;
     BaseItem* getItem() { return item; }
     Position getPoshead(){return poshead;}
-    ~Robot(){}
+    virtual ~Robot();
 };
 
 class RobotC : public Robot
@@ -477,9 +477,7 @@ public:
    }
     virtual ItemType getType() const = 0;
     virtual string str() const = 0;
-    ~BaseItem(){
-
-    }
+    virtual ~BaseItem() {}
 };
 
 class MagicBook : public BaseItem
@@ -487,6 +485,9 @@ class MagicBook : public BaseItem
     friend class TestStudyPink;
 
 public:
+    ~MagicBook() override {
+
+    }
     bool canUse(Character *obj, Robot *robot);
     void use(Character *obj, Robot *robot);
     
@@ -499,6 +500,9 @@ class EnergyDrink : public BaseItem
     friend class TestStudyPink;
 
 public:
+    ~EnergyDrink() override{
+
+    }
     bool canUse(Character *obj, Robot *robot);
     void use(Character *obj, Robot *robot);
     
@@ -511,6 +515,9 @@ class FirstAid : public BaseItem
     friend class TestStudyPink;
 
 public:
+    ~FirstAid() override{
+
+    }
     bool canUse(Character *obj, Robot *robot);
     void use(Character *obj, Robot *robot);
     
@@ -523,6 +530,9 @@ class ExcemptionCard : public BaseItem
     friend class TestStudyPink;
 
 public:
+    ~ExcemptionCard() override{
+
+    }
     bool canUse(Character *obj, Robot *robot);
     void use(Character *obj, Robot *robot);
     
@@ -538,6 +548,7 @@ private:
     string challenge;
 
 public:
+    PassingCard(string s);
     PassingCard(int i, int j);
     bool canUse(Character *obj, Robot *robot);
     void use(Character *obj, Robot *robot);
@@ -545,6 +556,9 @@ public:
     ItemType getType() const;
     string str() const;
     string getChallenge(){return challenge;}
+    ~PassingCard() override{
+
+    }
 };
 
 class BaseBag
