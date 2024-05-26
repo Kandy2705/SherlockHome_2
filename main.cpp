@@ -227,9 +227,9 @@ public:
         OUTPUT << "isFull: " << testArray->isFull() << endl;
         OUTPUT << "ArrayMovingObject str: " << testArray->str() << endl;
         delete testArray;
-//        delete sherlock;
-//        delete watson;
-//        delete criminal;
+        delete sherlock;
+        delete watson;
+        delete criminal;
     }
     static void testAll(string inputFile, string outputFile)
     {
@@ -268,7 +268,7 @@ int main(int argc, char *argv[])
         OUTPUT.close();
         start = 1;
     }
-    start = 1; end = 1;
+    start = 1; end = 10000;
     for (int i = start; i <= end; i++)
     {
         cout << i << " ";

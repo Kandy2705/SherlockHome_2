@@ -587,7 +587,7 @@ protected:
     public:
         Node(BaseItem *item, Node *next = nullptr) : item(item), next(next) {}
         ~Node() {
-            delete item;
+
         }
     };
 
