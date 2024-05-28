@@ -235,7 +235,7 @@ RobotS distance: 1
 RobotW distance: 1
 RobotSW distance: 2
 isFull: 0
-ArrayMovingObject str: ArrayMovingObject[count=0;capacity=7;]
+ArrayMovingObject str: ArrayMovingObject[count=0;capacity=7]
 ArrayMovingObject add: 1
 isFull: 0
 ArrayMovingObject str: ArrayMovingObject[count=1;capacity=7;Criminal[index=0;pos=(8,0)]]
@@ -260,3 +260,9 @@ ArrayMovingObject str: ArrayMovingObject[count=7;capacity=7;Criminal[index=0;pos
 ArrayMovingObject add: 0
 isFull: 1
 ArrayMovingObject str: ArrayMovingObject[count=7;capacity=7;Criminal[index=0;pos=(8,0)];Sherlock[index=1;pos=(0,1);moving_rule=URDL];Watson[index=2;pos=(0,1);moving_rule=URDL];Robot[pos=(9,0);type=C;dist=];Robot[pos=(0,2);type=S;dist=1];Robot[pos=(0,2);type=W;dist=1];Robot[pos=(0,2);type=SW;dist=2]]
+PassingCard string constructor
+Challenge: votien
+Create new Map 0x0
+Delete Map
+Create new ArrayMovingObject capacity=0
+Delete ArrayMovingObject

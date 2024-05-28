@@ -148,9 +148,9 @@ Robot::Robot(int index, const Position &pos, Map *map, Criminal *criminal, const
         poshead.setCol(pos.getCol());
     }
 }
-Robot::~Robot(){
-    delete item;
-}
+//Robot::~Robot(){
+////    delete item;
+//}
 
 RobotType Robot::getType() {
     return this->robot_type;
@@ -164,7 +164,7 @@ Sherlock::Sherlock(int index, const string &moving_rule, const Position &init_po
 {
     index_moving_rule = 0;
     if (init_hp < 0){
-        hp = 0;
+        hp = 1;
     }
     else if (init_hp > 500){
         hp = 500;
@@ -270,7 +270,7 @@ Watson::Watson(int index, const string &moving_rule, const Position &init_pos, M
 {
     index_moving_rule = 0;
     if (init_hp < 0){
-        hp = 0;
+        hp = 1;
     }
     else if (init_hp > 500){
         hp = 500;
@@ -542,6 +542,7 @@ Position Criminal::getNextPosition()
     return Position(vitrir, vitric);
 }
 Position Criminal::getPrevPosition() const{
+
     return prev_pos;
 }
 void Criminal::move()
@@ -628,9 +629,11 @@ int RobotC::getDistance(Watson *watson)
 }
 Position RobotC::getNextPosition()
 {
+    int vitric = -1;
+    int vitrir = -1;
     Position nextP = criminal->getPrevPosition();//getNextPosition();//getCurrentPosition();
-    int vitrir=nextP.getRow();
-    int vitric=nextP.getCol();
+    vitrir=nextP.getRow();
+    vitric=nextP.getCol();
     return Position(vitrir,vitric);
 }
 void RobotC::move()
@@ -966,6 +969,7 @@ int ArrayMovingObject::size() const
 string ArrayMovingObject::str() const
 {
     //ArrayMovingObject[count=<count>;capacity=<capacity>;<MovingObject1>;...]
+    if (count == 0) return "ArrayMovingObject[count=" + to_string(count) + ";capacity=" + to_string(capacity);
     string ketqua = "ArrayMovingObject[count=" + to_string(count) + ";capacity=" + to_string(capacity) + ";";
     for(int i = 0; i < count; i++){
         ketqua += arr_mv_objs[i] ->str();
@@ -988,8 +992,8 @@ Configuration::Configuration(const string &filepath)
     sherlock_moving_rule = "";
     watson_init_exp = 0;
     watson_moving_rule = "";
-    sherlock_init_hp = 0;
-    watson_init_hp= 0;
+    sherlock_init_hp = 1;
+    watson_init_hp= 1;
     sherlock_init_pos = Position::npos;
     watson_init_pos = Position::npos;
     criminal_init_pos = Position::npos;
@@ -998,6 +1002,7 @@ Configuration::Configuration(const string &filepath)
     map_num_cols = 0;
     map_num_rows = 0;
     max_num_moving_objects = 0;
+
 
     ifstream docfile(filepath);
     string dong;
@@ -1203,19 +1208,21 @@ StudyPinkProgram::~StudyPinkProgram()
     delete config;
 }
 bool StudyPinkProgram::isStop() const {
-    return arr_mv_objs->checkMeet(0) || sherlock->getHP() == 0 || watson->getHP() == 0;
+    return arr_mv_objs->checkMeet(0) || sherlock->getHP() == 1 || watson->getHP() == 1;
 }
 void StudyPinkProgram::run(bool verbose, ofstream &OUTPUT)
 {
-    if (verbose == false) return;
+    //if (verbose == false) return;
     if (!OUTPUT.is_open())
     {
         return;
     }
     bool isStop; //= arr_mv_objs->checkMeet(0) || sherlock->getHP() == 0 || watson->getHP() == 0;
+    if (sherlock->getCurrentPosition() == watson ->getCurrentPosition() || sherlock->getCurrentPosition() == criminal->getCurrentPosition()
+        || watson ->getCurrentPosition() == criminal->getCurrentPosition()) return;
     for (int istep = 0; istep < config->num_steps && !isStop; ++istep)
     {
-        isStop = arr_mv_objs->checkMeet(0) || sherlock->getHP() == 0 || watson->getHP() == 0;
+        isStop = arr_mv_objs->checkMeet(0) || sherlock->getHP() == 1 || watson->getHP() == 1;
         if (isStop)
             break;
         for (int i = 0; i < arr_mv_objs->size() && !isStop; ++i)
@@ -1821,38 +1828,40 @@ bool Sherlock::meet(RobotS *robotS)
             if(vatphamsudung->canUse(this, robotS)){
                 vatphamsudung = this->bag->get(EXCEMPTION_CARD);
                 vatphamsudung->use(this, robotS);
-                delete vatphamsudung;
+                // delete vatphamsudung;
             }
             else {
                 vatphamsudung = nullptr;
-                // delete vatphamsudung;
+                // // delete vatphamsudung;
             }
         }
-        BaseItem * newItem;
-        if (robotS->getItem()->getType() == MAGIC_BOOK){
-            newItem = new MagicBook();
-        }
-        else if (robotS->getItem()->getType() == ENERGY_DRINK){
-            newItem = new EnergyDrink();
-        }
-        else if (robotS->getItem()->getType() == FIRST_AID){
-            newItem = new FirstAid();
-        }
-        else if (robotS->getItem()->getType() == EXCEMPTION_CARD){
-            newItem = new ExcemptionCard();
-        }
-        else{
-            newItem = new PassingCard(robotS->getPoshead().getRow(), robotS->getPoshead().getCol());
-        }
+        // BaseItem * newItem;
+        // if (robotS->getItem()->getType() == MAGIC_BOOK){
+        //     newItem = new MagicBook();
+        // }
+        // else if (robotS->getItem()->getType() == ENERGY_DRINK){
+        //     newItem = new EnergyDrink();
+        // }
+        // else if (robotS->getItem()->getType() == FIRST_AID){
+        //     newItem = new FirstAid();
+        // }
+        // else if (robotS->getItem()->getType() == EXCEMPTION_CARD){
+        //     newItem = new ExcemptionCard();
+        // }
+        // else{
+        //     newItem = new PassingCard(robotS->getPoshead().getRow(), robotS->getPoshead().getCol());
+        // }
+        //
+        // if(!this->bag->insert(newItem)) {
+        //     delete newItem;
+        // }
 
-        if(!this->bag->insert(newItem)) {
-            delete newItem;
-        }
+        this->bag->insert(robotS->getItem());
 
         vatphamsudung = this->bag->get();
         if (vatphamsudung != nullptr) {
             vatphamsudung->use(this, NULL);
-            delete vatphamsudung;
+            // delete vatphamsudung;
         }
         return true;
     }
@@ -1864,7 +1873,7 @@ bool Sherlock::meet(RobotS *robotS)
                 vatphamsudung = this->bag->get(EXCEMPTION_CARD);
                 vatphamsudung->use(this, robotS);
                 dungchua = true;
-                delete vatphamsudung;
+                // delete vatphamsudung;
             }
             else dungchua = false;
         }
@@ -1874,7 +1883,7 @@ bool Sherlock::meet(RobotS *robotS)
         if (vatphamsudung != nullptr){
             if (vatphamsudung != nullptr) {
                 vatphamsudung->use(this, NULL);
-                delete vatphamsudung;
+                // delete vatphamsudung;
             }
             return false;
         }
@@ -1888,39 +1897,41 @@ bool Sherlock::meet(RobotW *robotW)
         if(vatphamsudung->canUse(this, robotW)){
             vatphamsudung = this->bag->get(EXCEMPTION_CARD);
             vatphamsudung->use(this, robotW);
-            delete vatphamsudung;
+            // delete vatphamsudung;
         }
         else {
             vatphamsudung = nullptr;
-            delete vatphamsudung;
+            //// delete vatphamsudung;
         }
     }
 
-    BaseItem * newItem;
-    if (robotW->getItem()->getType() == MAGIC_BOOK){
-        newItem = new MagicBook();
-    }
-    else if (robotW->getItem()->getType() == ENERGY_DRINK){
-        newItem = new EnergyDrink();
-    }
-    else if (robotW->getItem()->getType() == FIRST_AID){
-        newItem = new FirstAid();
-    }
-    else if (robotW->getItem()->getType() == EXCEMPTION_CARD){
-        newItem = new ExcemptionCard();
-    }
-    else{
-        newItem = new PassingCard(robotW->getPoshead().getRow(), robotW->getPoshead().getCol());
-    }
+    // BaseItem * newItem;
+    // if (robotW->getItem()->getType() == MAGIC_BOOK){
+    //     newItem = new MagicBook();
+    // }
+    // else if (robotW->getItem()->getType() == ENERGY_DRINK){
+    //     newItem = new EnergyDrink();
+    // }
+    // else if (robotW->getItem()->getType() == FIRST_AID){
+    //     newItem = new FirstAid();
+    // }
+    // else if (robotW->getItem()->getType() == EXCEMPTION_CARD){
+    //     newItem = new ExcemptionCard();
+    // }
+    // else{
+    //     newItem = new PassingCard(robotW->getPoshead().getRow(), robotW->getPoshead().getCol());
+    // }
+    //
+    // if(!this->bag->insert(newItem)) {
+    //     delete newItem;
+    // }
 
-    if(!this->bag->insert(newItem)) {
-        delete newItem;
-    }
+    this->bag->insert(robotW->getItem());
 
     vatphamsudung = this->bag->get();
     if (vatphamsudung != nullptr) {
         vatphamsudung->use(this, NULL);
-        delete vatphamsudung;
+        // delete vatphamsudung;
     }
     return true;
 
@@ -1934,36 +1945,38 @@ bool Sherlock::meet(RobotSW *robotSW)
             if(vatphamsudung->canUse(this, robotSW)){
                 vatphamsudung = this->bag->get(EXCEMPTION_CARD);
                 vatphamsudung->use(this, robotSW);
-                delete vatphamsudung;
+                // delete vatphamsudung;
             }
             else vatphamsudung = nullptr;
         }
 
-        BaseItem * newItem;
-        if (robotSW->getItem()->getType() == MAGIC_BOOK){
-            newItem = new MagicBook();
-        }
-        else if (robotSW->getItem()->getType() == ENERGY_DRINK){
-            newItem = new EnergyDrink();
-        }
-        else if (robotSW->getItem()->getType() == FIRST_AID){
-            newItem = new FirstAid();
-        }
-        else if (robotSW->getItem()->getType() == EXCEMPTION_CARD){
-            newItem = new ExcemptionCard();
-        }
-        else{
-            newItem = new PassingCard(robotSW->getPoshead().getRow(), robotSW->getPoshead().getCol());
-        }
+        // BaseItem * newItem;
+        // if (robotSW->getItem()->getType() == MAGIC_BOOK){
+        //     newItem = new MagicBook();
+        // }
+        // else if (robotSW->getItem()->getType() == ENERGY_DRINK){
+        //     newItem = new EnergyDrink();
+        // }
+        // else if (robotSW->getItem()->getType() == FIRST_AID){
+        //     newItem = new FirstAid();
+        // }
+        // else if (robotSW->getItem()->getType() == EXCEMPTION_CARD){
+        //     newItem = new ExcemptionCard();
+        // }
+        // else{
+        //     newItem = new PassingCard(robotSW->getPoshead().getRow(), robotSW->getPoshead().getCol());
+        // }
+        //
+        // if(!this->bag->insert(newItem)) {
+        //     delete newItem;
+        // }
 
-        if(!this->bag->insert(newItem)) {
-            delete newItem;
-        }
+        this->bag->insert(robotSW->getItem());
 
         vatphamsudung = this->bag->get();
         if (vatphamsudung != nullptr) {
             vatphamsudung->use(this, NULL);
-            delete vatphamsudung;
+            // delete vatphamsudung;
         }
         return true;
     }
@@ -1974,7 +1987,7 @@ bool Sherlock::meet(RobotSW *robotSW)
             if(vatphamsudung->canUse(this, robotSW)){
                 vatphamsudung = this->bag->get(EXCEMPTION_CARD);
                 vatphamsudung->use(this, robotSW);
-                delete vatphamsudung;
+                // delete vatphamsudung;
                 dungchua = true;
             }
             else dungchua = false;
@@ -1988,7 +2001,7 @@ bool Sherlock::meet(RobotSW *robotSW)
         if (vatphamsudung != nullptr){
             if (vatphamsudung != nullptr) {
                 vatphamsudung->use(this, NULL);
-                delete vatphamsudung;
+                // delete vatphamsudung;
             }
             return false;
         }
@@ -2004,7 +2017,7 @@ bool Sherlock::meet(RobotC *robotC)
             if(vatphamsudung->canUse(this, robotC)){
                 vatphamsudung = this->bag->get(EXCEMPTION_CARD);
                 vatphamsudung->use(this, robotC);
-                delete vatphamsudung;
+                // delete vatphamsudung;
             }
             else vatphamsudung = nullptr;
         }
@@ -2012,7 +2025,7 @@ bool Sherlock::meet(RobotC *robotC)
         vatphamsudung = this->bag->get();
         if (vatphamsudung != nullptr) {
             vatphamsudung->use(this, NULL);
-            delete vatphamsudung;
+            // delete vatphamsudung;
         }
 
         return true;
@@ -2023,36 +2036,38 @@ bool Sherlock::meet(RobotC *robotC)
             if(vatphamsudung->canUse(this, robotC)){
                 vatphamsudung = this->bag->get(EXCEMPTION_CARD);
                 vatphamsudung->use(this, robotC);
-                delete vatphamsudung;
+                // delete vatphamsudung;
             }
             else vatphamsudung = nullptr;
         }
 
-        BaseItem * newItem;
-        if (robotC->getItem()->getType() == MAGIC_BOOK){
-            newItem = new MagicBook();
-        }
-        else if (robotC->getItem()->getType() == ENERGY_DRINK){
-            newItem = new EnergyDrink();
-        }
-        else if (robotC->getItem()->getType() == FIRST_AID){
-            newItem = new FirstAid();
-        }
-        else if (robotC->getItem()->getType() == EXCEMPTION_CARD){
-            newItem = new ExcemptionCard();
-        }
-        else{
-            newItem = new PassingCard(robotC->getPoshead().getRow(), robotC->getPoshead().getCol());
-        }
+        // BaseItem * newItem;
+        // if (robotC->getItem()->getType() == MAGIC_BOOK){
+        //     newItem = new MagicBook();
+        // }
+        // else if (robotC->getItem()->getType() == ENERGY_DRINK){
+        //     newItem = new EnergyDrink();
+        // }
+        // else if (robotC->getItem()->getType() == FIRST_AID){
+        //     newItem = new FirstAid();
+        // }
+        // else if (robotC->getItem()->getType() == EXCEMPTION_CARD){
+        //     newItem = new ExcemptionCard();
+        // }
+        // else{
+        //     newItem = new PassingCard(robotC->getPoshead().getRow(), robotC->getPoshead().getCol());
+        // }
+        //
+        // if(!this->bag->insert(newItem)) {
+        //     delete newItem;
+        // }
 
-        if(!this->bag->insert(newItem)) {
-            delete newItem;
-        }
+        this->bag->insert(robotC->getItem());
 
         vatphamsudung = this->bag->get();
         if (vatphamsudung != nullptr) {
             vatphamsudung->use(this, NULL);
-            delete vatphamsudung;
+            // delete vatphamsudung;
         }
 
         return false;
@@ -2097,7 +2112,7 @@ bool Watson::meet(RobotS *robotS)
         if (vatphamsudung->canUse(this, robotS)) {
             vatphamsudung = this->bag->get(PASSING_CARD);
             vatphamsudung->use(this, robotS);
-            delete vatphamsudung;
+            // delete vatphamsudung;
         } else {
             vatphamsudung = nullptr;
         }
@@ -2106,7 +2121,7 @@ bool Watson::meet(RobotS *robotS)
     vatphamsudung = this->bag->get();
     if (vatphamsudung != nullptr) {
         vatphamsudung->use(this, NULL);
-        delete vatphamsudung;
+        // delete vatphamsudung;
     }
 
     return true;
@@ -2121,34 +2136,36 @@ bool Watson::meet(RobotW *robotW)
                 vatphamsudung = this->bag->get(PASSING_CARD);
                 vatphamsudung->use(this, robotW);
                 dungchua = true;
-                delete vatphamsudung;
+                // delete vatphamsudung;
             } else dungchua = false;
         }
-        BaseItem * newItem;
-        if (robotW->getItem()->getType() == MAGIC_BOOK){
-            newItem = new MagicBook();
-        }
-        else if (robotW->getItem()->getType() == ENERGY_DRINK){
-            newItem = new EnergyDrink();
-        }
-        else if (robotW->getItem()->getType() == FIRST_AID){
-            newItem = new FirstAid();
-        }
-        else if (robotW->getItem()->getType() == EXCEMPTION_CARD){
-            newItem = new ExcemptionCard();
-        }
-        else{
-            newItem = new PassingCard(robotW->getPoshead().getRow(), robotW->getPoshead().getCol());
-        }
+        // BaseItem * newItem;
+        // if (robotW->getItem()->getType() == MAGIC_BOOK){
+        //     newItem = new MagicBook();
+        // }
+        // else if (robotW->getItem()->getType() == ENERGY_DRINK){
+        //     newItem = new EnergyDrink();
+        // }
+        // else if (robotW->getItem()->getType() == FIRST_AID){
+        //     newItem = new FirstAid();
+        // }
+        // else if (robotW->getItem()->getType() == EXCEMPTION_CARD){
+        //     newItem = new ExcemptionCard();
+        // }
+        // else{
+        //     newItem = new PassingCard(robotW->getPoshead().getRow(), robotW->getPoshead().getCol());
+        // }
+        //
+        // if(!this->bag->insert(newItem)) {
+        //     delete newItem;
+        // }
 
-        if(!this->bag->insert(newItem)) {
-            delete newItem;
-        }
+        this->bag->insert(robotW->getItem());
 
         vatphamsudung = this->bag->get();
         if (vatphamsudung != nullptr) {
             vatphamsudung->use(this, NULL);
-            delete vatphamsudung;
+            // delete vatphamsudung;
         }
         return true;
     }
@@ -2160,37 +2177,39 @@ bool Watson::meet(RobotW *robotW)
                 vatphamsudung = this->bag->get(PASSING_CARD);
                 vatphamsudung->use(this, robotW);
                 dungchua = true;
-                delete vatphamsudung;
+                // delete vatphamsudung;
             } else dungchua = false;
         }
         if (dungchua == true){
-            BaseItem * newItem;
-            if (robotW->getItem()->getType() == MAGIC_BOOK){
-                newItem = new MagicBook();
-            }
-            else if (robotW->getItem()->getType() == ENERGY_DRINK){
-                newItem = new EnergyDrink();
-            }
-            else if (robotW->getItem()->getType() == FIRST_AID){
-                newItem = new FirstAid();
-            }
-            else if (robotW->getItem()->getType() == EXCEMPTION_CARD){
-                newItem = new ExcemptionCard();
-            }
-            else{
-                newItem = new PassingCard(robotW->getPoshead().getRow(), robotW->getPoshead().getCol());
-            }
+            // BaseItem * newItem;
+            // if (robotW->getItem()->getType() == MAGIC_BOOK){
+            //     newItem = new MagicBook();
+            // }
+            // else if (robotW->getItem()->getType() == ENERGY_DRINK){
+            //     newItem = new EnergyDrink();
+            // }
+            // else if (robotW->getItem()->getType() == FIRST_AID){
+            //     newItem = new FirstAid();
+            // }
+            // else if (robotW->getItem()->getType() == EXCEMPTION_CARD){
+            //     newItem = new ExcemptionCard();
+            // }
+            // else{
+            //     newItem = new PassingCard(robotW->getPoshead().getRow(), robotW->getPoshead().getCol());
+            // }
+            //
+            // if(!this->bag->insert(newItem)) {
+            //     delete newItem;
+            // }
 
-            if(!this->bag->insert(newItem)) {
-                delete newItem;
-            }
+            this->bag->insert(robotW->getItem());
         }
         if (dungchua == false) hp = ceil(hp * 0.95);
         vatphamsudung = this->bag->get();
 
         if (vatphamsudung != nullptr) {
             vatphamsudung->use(this, NULL);
-            delete vatphamsudung;
+            // delete vatphamsudung;
         }
         return false;
     }
@@ -2207,34 +2226,36 @@ bool Watson::meet(RobotSW *robotSW)
                 vatphamsudung = this->bag->get(PASSING_CARD);
                 vatphamsudung->use(this, robotSW);
                 dungchua = true;
-                delete vatphamsudung;
+                // delete vatphamsudung;
             } else dungchua = false;
         }
-        BaseItem * newItem;
-        if (robotSW->getItem()->getType() == MAGIC_BOOK){
-            newItem = new MagicBook();
-        }
-        else if (robotSW->getItem()->getType() == ENERGY_DRINK){
-            newItem = new EnergyDrink();
-        }
-        else if (robotSW->getItem()->getType() == FIRST_AID){
-            newItem = new FirstAid();
-        }
-        else if (robotSW->getItem()->getType() == EXCEMPTION_CARD){
-            newItem = new ExcemptionCard();
-        }
-        else{
-            newItem = new PassingCard(robotSW->getPoshead().getRow(), robotSW->getPoshead().getCol());
-        }
+        // BaseItem * newItem;
+        // if (robotSW->getItem()->getType() == MAGIC_BOOK){
+        //     newItem = new MagicBook();
+        // }
+        // else if (robotSW->getItem()->getType() == ENERGY_DRINK){
+        //     newItem = new EnergyDrink();
+        // }
+        // else if (robotSW->getItem()->getType() == FIRST_AID){
+        //     newItem = new FirstAid();
+        // }
+        // else if (robotSW->getItem()->getType() == EXCEMPTION_CARD){
+        //     newItem = new ExcemptionCard();
+        // }
+        // else{
+        //     newItem = new PassingCard(robotSW->getPoshead().getRow(), robotSW->getPoshead().getCol());
+        // }
+        //
+        // if(!this->bag->insert(newItem)) {
+        //     delete newItem;
+        // }
 
-        if(!this->bag->insert(newItem)) {
-            delete newItem;
-        }
+        this->bag->insert(robotSW->getItem());
 
         vatphamsudung = this->bag->get();
         if (vatphamsudung != nullptr) {
             vatphamsudung->use(this, NULL);
-            delete vatphamsudung;
+            // delete vatphamsudung;
         }
         return true;
     }
@@ -2246,30 +2267,32 @@ bool Watson::meet(RobotSW *robotSW)
                 vatphamsudung = this->bag->get(PASSING_CARD);
                 vatphamsudung->use(this, robotSW);
                 dungchua = true;
-                delete vatphamsudung;
+                // delete vatphamsudung;
             } else dungchua = false;
         }
         if (dungchua == true){
-            BaseItem * newItem;
-            if (robotSW->getItem()->getType() == MAGIC_BOOK){
-                newItem = new MagicBook();
-            }
-            else if (robotSW->getItem()->getType() == ENERGY_DRINK){
-                newItem = new EnergyDrink();
-            }
-            else if (robotSW->getItem()->getType() == FIRST_AID){
-                newItem = new FirstAid();
-            }
-            else if (robotSW->getItem()->getType() == EXCEMPTION_CARD){
-                newItem = new ExcemptionCard();
-            }
-            else{
-                newItem = new PassingCard(robotSW->getPoshead().getRow(), robotSW->getPoshead().getCol());
-            }
+            // BaseItem * newItem;
+            // if (robotSW->getItem()->getType() == MAGIC_BOOK){
+            //     newItem = new MagicBook();
+            // }
+            // else if (robotSW->getItem()->getType() == ENERGY_DRINK){
+            //     newItem = new EnergyDrink();
+            // }
+            // else if (robotSW->getItem()->getType() == FIRST_AID){
+            //     newItem = new FirstAid();
+            // }
+            // else if (robotSW->getItem()->getType() == EXCEMPTION_CARD){
+            //     newItem = new ExcemptionCard();
+            // }
+            // else{
+            //     newItem = new PassingCard(robotSW->getPoshead().getRow(), robotSW->getPoshead().getCol());
+            // }
+            //
+            // if(!this->bag->insert(newItem)) {
+            //     delete newItem;
+            // }
 
-            if(!this->bag->insert(newItem)) {
-                delete newItem;
-            }
+            this->bag->insert(robotSW->getItem());
         }
         if (dungchua == false){
             hp = ceil(hp * 0.85);
@@ -2279,7 +2302,7 @@ bool Watson::meet(RobotSW *robotSW)
         vatphamsudung = this->bag->get();
         if (vatphamsudung != nullptr) {
             vatphamsudung->use(this, NULL);
-            delete vatphamsudung;
+            // delete vatphamsudung;
         }
         return false;
     }
@@ -2294,34 +2317,36 @@ bool Watson::meet(RobotC *robotC)
             vatphamsudung = this->bag->get(PASSING_CARD);
             vatphamsudung->use(this, robotC);
             dungchua = true;
-            delete vatphamsudung;
+            // delete vatphamsudung;
         } else dungchua = false;
     }
-    BaseItem * newItem;
-    if (robotC->getItem()->getType() == MAGIC_BOOK){
-        newItem = new MagicBook();
-    }
-    else if (robotC->getItem()->getType() == ENERGY_DRINK){
-        newItem = new EnergyDrink();
-    }
-    else if (robotC->getItem()->getType() == FIRST_AID){
-        newItem = new FirstAid();
-    }
-    else if (robotC->getItem()->getType() == EXCEMPTION_CARD){
-        newItem = new ExcemptionCard();
-    }
-    else{
-        newItem = new PassingCard(robotC->getPoshead().getRow(), robotC->getPoshead().getCol());
-    }
+    // BaseItem * newItem;
+    // if (robotC->getItem()->getType() == MAGIC_BOOK){
+    //     newItem = new MagicBook();
+    // }
+    // else if (robotC->getItem()->getType() == ENERGY_DRINK){
+    //     newItem = new EnergyDrink();
+    // }
+    // else if (robotC->getItem()->getType() == FIRST_AID){
+    //     newItem = new FirstAid();
+    // }
+    // else if (robotC->getItem()->getType() == EXCEMPTION_CARD){
+    //     newItem = new ExcemptionCard();
+    // }
+    // else{
+    //     newItem = new PassingCard(robotC->getPoshead().getRow(), robotC->getPoshead().getCol());
+    // }
+    //
+    // if(!this->bag->insert(newItem)) {
+    //     delete newItem;
+    // }
 
-    if(!this->bag->insert(newItem)) {
-        delete newItem;
-    }
+    this->bag->insert(robotC->getItem());
 
     vatphamsudung = this->bag->get();
     if (vatphamsudung != nullptr) {
         vatphamsudung->use(this, NULL);
-        delete vatphamsudung;
+        // delete vatphamsudung;
     }
     return true;
 }
@@ -2376,3 +2401,6 @@ bool BaseBag::checkItem(ItemType itemType) {
     }
     return false;
 }
+////////////////////////////////////////////////
+/// END OF STUDENT'S ANSWER
+////////////////////////////////////////////////

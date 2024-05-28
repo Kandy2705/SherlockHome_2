@@ -25,8 +25,6 @@ using namespace std;
 
 #endif //_MAIN_2_H_
 
-
-
 // addition
 static int COUNT = 0;
 static ofstream OUTPUT;

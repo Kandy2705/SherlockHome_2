@@ -1,3 +1,13 @@
+
+//       (`-')               (`-')      _      (`-')  _<-. (`-')_
+//      _(OO )     .->       ( OO).->  (_)     ( OO).-/   \( OO) )
+// ,--.(_/,-.\(`-')----.     /    '._  ,-(`-')(,------.,--./ ,--/
+// \   \ / (_/( OO).-.  '    |'--...__)| ( OO) |  .---'|   \ |  |
+//  \   /   / ( _) | |  |    `--.  .--'|  |  )(|  '--. |  . '|  |)
+// _ \     /_) \|  |)|  |       |  |  (|  |_/  |  .--' |  |\    |
+// \-'\   /     '  '-'  '       |  |   |  |'-> |  `---.|  | \   |
+//     `-'       `-----'        `--'   `--'    `------'`--'  `--'
+
 /*
  * Hướng dẫn chạy testcase
  * Chạy 2 lệnh sau trong terminal
@@ -230,6 +240,19 @@ public:
         delete sherlock;
         delete watson;
         delete criminal;
+        // weird test
+        OUTPUT << "PassingCard string constructor" << endl;
+        PassingCard *card = new PassingCard("votien");
+        OUTPUT << "Challenge: " << card->challenge << endl;
+        delete card;
+        OUTPUT << "Create new Map 0x0" << endl;
+        Map *map = new Map(0, 0, 0, nullptr, 0, nullptr);
+        OUTPUT << "Delete Map" << endl;
+        delete map;
+        OUTPUT << "Create new ArrayMovingObject capacity=0" << endl;
+        ArrayMovingObject *array = new ArrayMovingObject(0);
+        OUTPUT << "Delete ArrayMovingObject" << endl;
+        delete array;
     }
     static void testAll(string inputFile, string outputFile)
     {
@@ -266,11 +289,12 @@ int main(int argc, char *argv[])
         OUTPUT.open(outputFile);
         TestStudyInPink::testBasic();
         OUTPUT.close();
-        start = 1;
     }
-    start = 1; end = 10000;
+    start = 0; end = 10000;
     for (int i = start; i <= end; i++)
     {
+        if (i == 0)
+            continue;
         cout << i << " ";
         string inputFile = "testcase/input/input" + to_string(i) + ".txt";
         string outputFile = folderr + to_string(i) + ".txt";

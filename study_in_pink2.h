@@ -82,7 +82,7 @@ enum MovingObjectType
 
 class MapElement
 {
-    friend class TestStudyPink;
+    friend class TestStudyInPink;
 
 protected:
     ElementType type;
@@ -95,7 +95,7 @@ public:
 
 class Path : public MapElement
 {
-    friend class TestStudyPink;
+    friend class TestStudyInPink;
 
 public:
     Path();
@@ -106,7 +106,7 @@ public:
 
 class Wall : public MapElement
 {
-    friend class TestStudyPink;
+    friend class TestStudyInPink;
 
 public:
     Wall();
@@ -117,7 +117,7 @@ public:
 
 class FakeWall : public MapElement
 {
-    friend class TestStudyPink;
+    friend class TestStudyInPink;
 
 private:
     int req_exp;
@@ -132,7 +132,7 @@ public:
 
 class Map
 {
-    friend class TestStudyPink;
+    friend class TestStudyInPink;
 
 private:
     int num_rows, num_cols;
@@ -152,7 +152,7 @@ public:
 
 class Position
 {
-    friend class TestStudyPink;
+    friend class TestStudyInPink;
 
 private:
     int r, c;
@@ -175,7 +175,7 @@ public:
 
 class MovingObject
 {
-    friend class TestStudyPink;
+    friend class TestStudyInPink;
 
 protected:
     int index;
@@ -196,7 +196,7 @@ public:
 
 class Character : public MovingObject
 {
-    friend class TestStudyPink;
+    friend class TestStudyInPink;
 
 public:
     Character(int index, const Position pos, Map *map, const string &name = "");
@@ -209,7 +209,7 @@ public:
 
 class Sherlock : public Character
 {
-    friend class TestStudyPink;
+    friend class TestStudyInPink;
 
 private:
     // TODO
@@ -242,7 +242,7 @@ public:
 
 class Watson : public Character
 {
-    friend class TestStudyPink;
+    friend class TestStudyInPink;
 
 private:
     // TODO
@@ -273,7 +273,7 @@ public:
 
 class Criminal : public Character
 {
-    friend class TestStudyPink;
+    friend class TestStudyInPink;
 
 private:
     // TODO
@@ -281,7 +281,7 @@ private:
     Watson *watson;
 
     int count;
-    Position prev_pos;
+    Position prev_pos = Position::npos;
 
 public:
     Criminal(int index, const Position &init_pos, Map *map, Sherlock *sherlock, Watson *watson);
@@ -303,7 +303,7 @@ public:
 
 class ArrayMovingObject
 {
-    friend class TestStudyPink;
+    friend class TestStudyInPink;
 
 private:
     // TODO
@@ -325,7 +325,7 @@ public:
 
 class Configuration
 {
-    friend class TestStudyPink;
+    friend class TestStudyInPink;
     friend class StudyPinkProgram;
 
 private:
@@ -356,7 +356,7 @@ public:
 
 class Robot : public MovingObject
 {
-    friend class TestStudyPink;
+    friend class TestStudyInPink;
 
 protected:
     RobotType robot_type;
@@ -380,12 +380,12 @@ public:
     virtual int getDistance() const = 0;
     BaseItem* getItem() { return item; }
     Position getPoshead(){return poshead;}
-    virtual ~Robot();
+    virtual ~Robot()=default;
 };
 
 class RobotC : public Robot
 {
-    friend class TestStudyPink;
+    friend class TestStudyInPink;
 
 private:
 public:
@@ -402,12 +402,14 @@ public:
 
     int getDistance() const override;
     RobotType getType() const;
-    ~RobotC(){}
+    ~RobotC(){
+        delete item;
+    }
 };
 
 class RobotS : public Robot
 {
-    friend class TestStudyPink;
+    friend class TestStudyInPink;
 
 private:
     Sherlock *sherlock;
@@ -424,12 +426,14 @@ public:
     string str() const;
 
     RobotType getType() const;
-    ~RobotS(){}
+    ~RobotS(){
+        delete item;
+    }
 };
 
 class RobotW : public Robot
 {
-    friend class TestStudyPink;
+    friend class TestStudyInPink;
 
 private:
     Watson *watson;
@@ -446,12 +450,14 @@ public:
     string str() const;
 
     RobotType getType() const ;
-    ~RobotW(){}
+    ~RobotW(){
+        delete item;
+    }
 };
 
 class RobotSW : public Robot
 {
-    friend class TestStudyPink;
+    friend class TestStudyInPink;
 
 private:
     Sherlock *sherlock;
@@ -471,12 +477,14 @@ public:
     void move();
 
     RobotType getType() const;
-    ~RobotSW(){}
+    ~RobotSW(){
+        delete item;
+    }
 };
 
 class BaseItem
 {
-    friend class TestStudyPink;
+    friend class TestStudyInPink;
 
 public:
     virtual bool canUse(Character *obj, Robot *robot) = 0;
@@ -487,14 +495,12 @@ public:
     }
     virtual ItemType getType() const = 0;
     virtual string str() const = 0;
-    virtual ~BaseItem() {
-
-    }
+    virtual ~BaseItem() = default;
 };
 
 class MagicBook : public BaseItem
 {
-    friend class TestStudyPink;
+    friend class TestStudyInPink;
 
 public:
     ~MagicBook() override {
@@ -509,7 +515,7 @@ public:
 
 class EnergyDrink : public BaseItem
 {
-    friend class TestStudyPink;
+    friend class TestStudyInPink;
 
 public:
     ~EnergyDrink() override{
@@ -524,7 +530,7 @@ public:
 
 class FirstAid : public BaseItem
 {
-    friend class TestStudyPink;
+    friend class TestStudyInPink;
 
 public:
     ~FirstAid() override{
@@ -539,7 +545,7 @@ public:
 
 class ExcemptionCard : public BaseItem
 {
-    friend class TestStudyPink;
+    friend class TestStudyInPink;
 
 public:
     ~ExcemptionCard() override{
@@ -554,7 +560,7 @@ public:
 
 class PassingCard : public BaseItem
 {
-    friend class TestStudyPink;
+    friend class TestStudyInPink;
 
 private:
     string challenge;
@@ -574,7 +580,7 @@ public:
 };
 
 class BaseBag {
-    friend class TestStudyPink;
+    friend class TestStudyInPink;
 
 protected:
 
@@ -627,7 +633,7 @@ public:
 
 class SherlockBag : public BaseBag
 {
-    friend class TestStudyPink;
+    friend class TestStudyInPink;
 
 private:
     Sherlock *sherlock;
@@ -639,7 +645,7 @@ public:
 
 class WatsonBag : public BaseBag
 {
-    friend class TestStudyPink;
+    friend class TestStudyInPink;
 
 private:
     Watson *watson;
@@ -651,7 +657,7 @@ public:
 
 class StudyPinkProgram
 {
-    friend class TestStudyPink;
+    friend class TestStudyInPink;
 
 private:
     Configuration *config;
